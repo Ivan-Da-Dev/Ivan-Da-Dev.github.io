@@ -8,7 +8,7 @@ export default function Review({ review }){
     const img = `../review-images/${review.img}`
     const disqusShortname = "oniichann"
     const disqusConfig = {
-      url: "http://localhost:3000",
+      url: "https://oniichann.tk",
       identifier: review.title.replace(/ /g,'-'),
       title: "Comments"
     }
