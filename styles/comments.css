@@ -1,0 +1,16 @@
+/* Comments */
+.comments {
+    background-color: #23272a;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 20px;
+
+    box-shadow: 5px 0px 18px black;
+}
+
+.comments h1 {
+    text-align: center;
+    position: relative;
+    color: white;
+}

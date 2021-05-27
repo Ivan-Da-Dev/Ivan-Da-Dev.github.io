@@ -1,9 +1,16 @@
 import React from "react"
 import Head from "next/head"
 import waifus from "../components/waifu_list.js"
+import Disqus from "disqus-react"
 
 class Waifus extends React.Component {
     render() {
+        const disqusShortname = "oniichann-tk"
+        const disqusConfig = {
+          url: "https://oniichann.tk",
+          identifier: "waifus",
+          title: "waifus"
+        }
 
         return (
             <div>
@@ -64,6 +71,15 @@ class Waifus extends React.Component {
                     })
                 }
             </div>
+
+            <div className="comments">
+                <h1>Comments</h1>
+                    <Disqus.DiscussionEmbed
+                    shortname={disqusShortname}
+                    config={disqusConfig}
+                    />
+            </div>
+
             </div>
         )
     }

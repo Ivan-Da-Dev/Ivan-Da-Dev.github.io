@@ -1,17 +1,19 @@
 import React from 'react'
 import data from '../../components/review_list.js'
-import { DiscussionEmbed } from 'disqus-react';
+import Disqus from "disqus-react"
 import Head from "next/head"
 import markdown from "../../components/markdown"
 
 export default function Review({ review }){
     const img = `../review-images/${review.img}`
-    const disqusShortname = "oniichann"
+
+    const disqusShortname = "oniichann-tk"
     const disqusConfig = {
       url: "https://oniichann.tk",
-      identifier: review.title.replace(/ /g,'-'),
-      title: "Comments"
+      identifier: review.title.toLowerCase().replace(/ /g,'-'),
+      title: review.title
     }
+
     const bgImg = `../review-images/${review.bg}`
     const title = `${review.title.substring(0,1).toUpperCase()}${review.title.slice(1)}`
     const meta_desc = `Read Onii-chan's review on ${review.title} with a rating of ${review.rating}`
@@ -89,17 +91,10 @@ export default function Review({ review }){
 
             <div className="view_comments">
                 <h1>Comments</h1>
-                <DiscussionEmbed
-                    shortname='oniichann'
-                    config={
-                        {
-                            url: `https://oniichann.tk/review/${encodeURIComponent(review.title.toLowerCase())}`,
-                            identifier: review.title.toLowerCase().replace(/ /g,'-'),
-                            title: review.title
-                        }
-                    }
-                />
-
+                    <Disqus.DiscussionEmbed
+                    shortname={disqusShortname}
+                    config={disqusConfig}
+                    />
             </div>
         </div>
     )

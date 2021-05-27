@@ -14,11 +14,11 @@ class Reviews extends React.Component {
     }
     
     render() {      
-      const disqusShortname = "oniichann"
+      const disqusShortname = "oniichann-tk"
       const disqusConfig = {
-        url: "http://localhost:3000",
+        url: "https://oniichann.tk",
         identifier: "reviews",
-        title: "Comments"
+        title: "reviews"
       }
 
         return (
@@ -140,12 +140,10 @@ class Reviews extends React.Component {
 
             <div className="comments">
                 <h1>Comments</h1>
-                    <div className="article-container">
-                        <Disqus.DiscussionEmbed
-                        shortname={disqusShortname}
-                        config={disqusConfig}
-                        />
-                    </div>
+                    <Disqus.DiscussionEmbed
+                    shortname={disqusShortname}
+                    config={disqusConfig}
+                    />
             </div>
 
             </div>
