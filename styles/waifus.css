@@ -1,0 +1,138 @@
+html, body { height: 100%; width: 100%; margin: 0; }
+
+.body {
+    margin-top: 4rem;
+    height: 100%;
+}
+
+.waifu_card {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 40%;
+    width: 90%;
+
+    border-radius: 5px;
+    transition: 0.5s;
+
+    position: relative;
+
+    z-index: 2;
+
+    overflow: hidden;
+}
+
+.waifu_card .waifu_card_bg_layer {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 5px;
+}
+
+.waifu_card:hover .waifu_card_bg {
+    width: 105%;
+    height: 105%;
+}
+
+.waifu_card .waifu_card_bg {
+    position: absolute;
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.waifu_card .waifu_card_content {
+    z-index: 1;
+    position: relative;
+    display: flex;
+}
+
+.waifu_card .waifu_card_content .waifu_card_left {
+    width: 20%;
+}
+
+.waifu_card .waifu_card_content .waifu_card_left .waifu_card_img {
+    height: 100%;
+    width: 100%;
+}
+
+.waifu_card .waifu_card_content .waifu_card_right {
+    flex: 1;
+}
+
+.waifu_card .waifu_card_content .waifu_card_right .waifu_card_name {
+    font-size: 3rem;
+    color: var(--dark_white);
+    margin-left: 1%;
+    margin-bottom: 0;
+}
+
+.waifu_card .waifu_card_content .waifu_card_right .waifu_card_anime {
+    font-size: 1.5rem;
+    color: var(--discord_blue);
+    margin-left: 1%;
+    font-weight: 200px;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1340px) and (min-width: 800px) {
+    .waifu_card .waifu_card_content .waifu_card_right .waifu_card_name {
+        font-size: 2.5rem;
+    }
+    
+    .waifu_card .waifu_card_content .waifu_card_right .waifu_card_anime {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .waifu_card .waifu_card_content {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .waifu_card .waifu_card_content .waifu_card_left {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .waifu_card .waifu_card_content .waifu_card_right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .waifu_card .waifu_card_content .waifu_card_right .waifu_card_name {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .waifu_card .waifu_card_content .waifu_card_right .waifu_card_anime {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+:root {
+    --display_red: #e94560;
+    --discord_blue: #7289da;
+    --top_card_border: #7289da;
+    --bot_card_border: #7289da;
+    --discord_blue_lighter: #8496d8;
+    --discord_light_grey: #99aab5;
+    --discord_grey: #2c2f33;
+    --discord_dark_grey: #23272a;
+    --dark_white: #ececec;
+
+    --read_font: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}

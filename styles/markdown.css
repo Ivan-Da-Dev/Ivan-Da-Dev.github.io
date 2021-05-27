@@ -1,0 +1,45 @@
+.markdown_bold_text {
+    color: wheat;
+}
+
+.markdown_emoji {
+    max-height: 3rem;
+    max-width: 3rem;
+}
+
+.markdown_link {
+    color: wheat;
+    font-size: 2rem;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.markdown_attachment {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 50%;
+    border-radius: 5px;
+}
+
+.markdown_attachment_ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .markdown_attachment {
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        max-height: 50%;
+        border-radius: 5px;
+    }
+    
+    .markdown_attachment_ctn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

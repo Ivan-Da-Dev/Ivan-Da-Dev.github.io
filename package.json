@@ -1,0 +1,22 @@
+{
+  "homepage": "https://ivan-da-dev.github.io/",
+  "name": "oniichan",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .next",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "disqus-react": "^1.0.11",
+    "next": "10.2.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
+  }
+}
