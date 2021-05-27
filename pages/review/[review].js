@@ -1,6 +1,6 @@
 import React from 'react'
 import data from '../../components/review_list.js'
-import Disqus from "disqus-react"
+import { DiscussionEmbed } from 'disqus-react';
 import Head from "next/head"
 import markdown from "../../components/markdown"
 
@@ -8,7 +8,7 @@ export default function Review({ review }){
     const img = `../review-images/${review.img}`
     const disqusShortname = "oniichann"
     const disqusConfig = {
-      url: "http://localhost:3000",
+      url: "https://oniichann.tk",
       identifier: review.title.replace(/ /g,'-'),
       title: "Comments"
     }
@@ -89,12 +89,17 @@ export default function Review({ review }){
 
             <div className="view_comments">
                 <h1>Comments</h1>
-                    <div className="article-container">
-                        <Disqus.DiscussionEmbed
-                        shortname={disqusShortname}
-                        config={disqusConfig}
-                        />
-                    </div>
+                <DiscussionEmbed
+                    shortname='oniichann'
+                    config={
+                        {
+                            url: `https://oniichann.tk/review/${encodeURIComponent(review.title.toLowerCase())}`,
+                            identifier: review.title.toLowerCase().replace(/ /g,'-'),
+                            title: review.title
+                        }
+                    }
+                />
+
             </div>
         </div>
     )
