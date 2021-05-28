@@ -35,7 +35,7 @@ body {
 /* Right */
 .view_container#right {
 
-    width: 21%;
+    width: 25%;
 
     background-color: rgba(0, 0, 0, 0.527);
 
@@ -66,6 +66,13 @@ body {
     border-width: 2px;
     border-color: var(--top_card_border);
     border-right: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.view_container#left {
+    flex: 1;
 }
 
 .view_container#left .view_title {
@@ -107,17 +114,24 @@ body {
 
 .view_container#left .view_rating {
     margin-left: 1%;
+    display: flex;
+
+    width: 100%;
+    height: 6%;
 }
 
 .view_container#left .view_rating .card_rating_bigger {
-    font-size: 4.5rem;
+    font-size: 4rem;
 
     color: var(--dark_white);
+
+    flex: 1;
+
+    width: 90%;
 }
 
 .view_container#left .view_rating .star {
-    height: 4%;
-    width: 4%;
+    max-height: 100%;
 }
 
 .view_container#left .view_desc {
@@ -131,6 +145,70 @@ body {
 }
 
 /* Mid */
+.view_container#mid .seasons {
+    width: 99%;
+    display: inline-block;
+
+    background-color: rgba(0, 0, 0, 0.527);
+
+    padding-bottom: 20px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+.view_container#mid .seasons .season_card:hover {
+    background-color: var(--discord_dark_grey_hover);
+    box-shadow: 0px 0px 9px black;
+}
+
+.view_container#mid .seasons .season_card {
+    display: inline-flex;
+    flex-direction: column;
+
+    background-color: var(--discord_dark_grey);
+
+    width: 12%;
+    margin: 3px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.view_container#mid .seasons .season_card #top {
+    height: 100%;
+    width: 100%;
+}
+
+.view_container#mid .seasons .season_card #top img{
+    height: 100%;
+    width: 100%;
+
+    border-radius: 5px 5px 0 0;
+}
+
+.view_container#mid .seasons .season_card #bot {
+    flex: 1;
+    margin-left: 1%;
+}
+
+.view_container#mid .seasons .season_card #bot .season_card_title {
+    font-size: 1rem;
+    color: white;
+
+    margin-bottom: 0;
+}
+
+.view_container#mid .seasons .season_card #bot .season_card_date {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.view_container#mid .seasons .season_card #bot .season_card_type {
+    font-size: 0.8rem;
+    color: var(--discord_blue_lighter);
+}
+
 .view_container#mid {
     margin-left: 0.5%;
     flex: 1;
@@ -154,7 +232,17 @@ body {
     font-size: 1.5rem;
 }
 
-.view_container#mid .label {
+.view_container#mid .season_label {
+    background-color: rgba(0, 0, 0, 0.527);
+    margin: 0;
+
+    border-radius: 5px 5px 0px 0px ;
+    padding-left: 0.5%;
+    color: var(--dark_white);
+    font-size: 5rem;
+}
+
+.view_container#mid .review_label {
     color: var(--dark_white);
     font-size: 5rem;
     margin-left: 0.5%;
@@ -191,7 +279,13 @@ body {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1350px) and (min-width: 1000px) {
+    .view_container#mid .seasons .season_card {
+        width: 24%;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 780px) {
     .view_content {
         flex-direction: column;
     }
@@ -221,11 +315,6 @@ body {
 
         font-size: 1rem;
     }
-    
-    .view_container#left .view_rating .star {
-        height: 10%;
-        width: 10%;
-    }
 
     /* Right */
     .view_container#right {
@@ -253,6 +342,22 @@ body {
     }
 
     /* Mid */
+    .view_container#mid .seasons .season_card {
+        width: 24%;
+    }
+    
+    .view_container#mid .seasons .season_card #bot .season_card_title {
+        font-size: 1rem;
+    }
+    
+    .view_container#mid .seasons .season_card #bot .season_card_date {
+        font-size: 0.9rem;
+    }
+    
+    .view_container#mid .seasons .season_card #bot .season_card_type {
+        font-size: 0.8rem;
+    }
+
     .view_container#mid {
         flex: none;
 
@@ -264,6 +369,24 @@ body {
     }
 }
 
+@media only screen and (max-width: 780px) {
+    .view_container#mid .seasons .season_card {
+        width: 49%;
+    }
+    
+    .view_container#mid .seasons .season_card #bot .season_card_title {
+        font-size: 1rem;
+    }
+    
+    .view_container#mid .seasons .season_card #bot .season_card_date {
+        font-size: 0.9rem;
+    }
+    
+    .view_container#mid .seasons .season_card #bot .season_card_type {
+        font-size: 0.8rem;
+    }
+} 
+
 
 
 :root {
@@ -274,6 +397,7 @@ body {
     --discord_light_grey: #99aab5;
     --discord_grey: #2c2f33;
     --discord_dark_grey: #23272a;
+    --discord_dark_grey_hover: #33393d;
     --dark_white: #ececec;
 
     --read_font: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
