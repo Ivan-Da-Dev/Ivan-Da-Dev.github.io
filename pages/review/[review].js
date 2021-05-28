@@ -28,12 +28,12 @@ export default function Review({ reviewObj }){
                 <link rel="icon" href="../review-images/icon.png" />
                 <title>{title}</title>
 
-                <meta property="og:title" content={title}></meta>
-                <meta property="og:description" content={meta_desc} />
-                <meta property="og:image" content={bgImg} data-vue-meta="true"></meta>
-                <meta property="og:url" content={url}></meta>
-                <meta name="description" content={meta_desc} />
-                <meta name="twitter:card" content="summary_large_image"></meta>
+                <meta property="og:title"       content={title}                 data-vue-meta="true"></meta>
+                <meta property="og:description" content={meta_desc}             data-vue-meta="true"></meta>
+                <meta property="og:image"       content={bgImg}                 data-vue-meta="true"></meta>
+                <meta property="og:url"         content={url}                   data-vue-meta="true"></meta>
+                <meta name="description"        content={meta_desc}             data-vue-meta="true"></meta>
+                <meta name="twitter:card"       content="summary_large_image"   data-vue-meta="true"></meta>
 
                 
                 <meta name="keywords" content="Onii Chan" />
