@@ -547,7 +547,7 @@ exports.ids = () => {
   return list.map(anime => {
     return {
       params: {
-        review: anime.id.replace(/ /g,'-')
+        review: anime.id.replace(/ /g,'_')
       }
     }
   })
@@ -555,7 +555,7 @@ exports.ids = () => {
 
 exports.getReviewData = (id) => {
   return {
-    review: list.find(anime => anime.id === id.replace(/-/g,' ')),
-    id: list.indexOf(list.find(anime => anime.id === id.replace(/-/g,' ')))
+    review: list.find(anime => anime.id === id.replace(/_/g,' ')),
+    id: list.indexOf(list.find(anime => anime.id === id.replace(/_/g,' ')))
   }
 }
