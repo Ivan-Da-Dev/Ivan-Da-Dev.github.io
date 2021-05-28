@@ -371,7 +371,7 @@ body {
 
 @media only screen and (max-width: 780px) {
     .view_container#mid .seasons .season_card {
-        width: 49%;
+        width: 48%;
     }
     
     .view_container#mid .seasons .season_card #bot .season_card_title {
