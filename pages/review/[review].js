@@ -20,6 +20,7 @@ export default function Review({ reviewObj }){
     const meta_desc = `Read Onii-chan's review on ${review.title} with a rating of ${review.rating}. ${review.desc}`
     const _review = 
     `${markdown.markdown(review.review)}`
+    const url = `https://oniichann.tk/review/${review.id.replace(/ /g,'_')}`
 
     return (
         <div>
@@ -27,9 +28,11 @@ export default function Review({ reviewObj }){
                 <link rel="icon" href="../review-images/icon.png" />
                 <title>{title}</title>
 
-                <meta property="og:site_name" content="Onii CHANN"></meta>
-                <meta name="description" content={meta_desc} />
+                <meta property="og:title" content={title}></meta>
+                <meta property="og:description" content={meta_desc} />
                 <meta property="og:image" content={bgImg} data-vue-meta="true"></meta>
+                <meta property="og:url" content={url}></meta>
+                <meta name="description" content={meta_desc} />
                 <meta name="twitter:card" content="summary_large_image"></meta>
 
                 
