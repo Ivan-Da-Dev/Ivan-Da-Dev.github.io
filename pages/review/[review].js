@@ -27,16 +27,20 @@ export default function Review({ reviewObj }){
                 <link rel="icon" href="../review-images/icon.png" />
                 <title>{title}</title>
 
+                <meta property="og:title" content={title}></meta>
+                <meta property="og:type" content="website"></meta>
+                <meta property="og:site_name" content="Onii CHANN"></meta>
                 <meta name="description" content={meta_desc} />
                 <meta property="og:image" content={bgImg} data-vue-meta="true"></meta>
+                <meta name="twitter:card" content="summary_large_image"></meta>
+
                 
                 <meta name="keywords" content="Onii Chan" />
                 <meta name="keywords" content="Onii-Chan" />
                 <meta name="keywords" content="Anime Reviews" />
                 <meta name="keywords" content="Shitty Anime Reviews" />
                 <meta name="keywords" content={review.title} />
-                <meta data-vmid="twitter:card" name="twitter:card" content="summary_large_image" data-vue-meta="true"></meta>
-                
+
             </Head>
 
             <div className="nav_bar">
