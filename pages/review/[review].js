@@ -28,7 +28,8 @@ export default function Review({ reviewObj }){
                 <title>{title}</title>
 
                 <meta name="description" content={meta_desc} />
-                <meta property="og:image" content={bgImg} data-vue-meta="true"></meta>
+                <meta property="og:image" content="https://img.anili.st/media/3455" data-vue-meta="true"></meta>
+                {/* <meta property="og:image" content={bgImg} data-vue-meta="true"></meta> */}
                 
                 <meta name="keywords" content="Onii Chan" />
                 <meta name="keywords" content="Onii-Chan" />
