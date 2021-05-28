@@ -81,7 +81,7 @@ class Reviews extends React.Component {
                               const bg = `../review-images/${review.bg}`
                           return (
                               <div>
-                                  <a as={"/review/" + review.id.replace(/ /g,'-')} href={'/review/' + review.id.replace(/ /g,'-')}>
+                                  <a as={"/review/" + review.id.replace(/ /g,'_')} href={'/review/' + review.id.replace(/ /g,'_')}>
                                     <div className='card' id={review.title.replace(/ /g,'_')} style={{
                                     backgroundPosition: review.bg_pos ? review.bg_pos : '100% 0%'
                                     }}>
