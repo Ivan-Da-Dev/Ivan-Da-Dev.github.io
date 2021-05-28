@@ -3,6 +3,8 @@ import useState from 'react'
 import Head from "next/head"
 import list from '../components/review_list.js'
 import Disqus from "disqus-react"
+import getSeasonModule from "../components/getseason.js"
+const getSeason = getSeasonModule.getSeason
 
 class Reviews extends React.Component {
     constructor(){
@@ -79,6 +81,26 @@ class Reviews extends React.Component {
                     
                               const img = `../review-images/${review.img}`
                               const bg = `../review-images/${review.bg}`
+                              const season = `${getSeason(review.date.split(' ')[0].trim())} ${review.date.split(",")[1].trim()} • ${
+                                review.seasons.filter(s => 
+                                  s.type !== 'movie' && 
+                                  s.type !== 'Spin off' && 
+                                  s.type !== 'sequel' &&
+                                  s.type !== 'prequel'
+                                  ).length >= 1 ? `${review.seasons.filter(s => 
+                                    s.type !== 'movie' && 
+                                    s.type !== 'Spin off' && 
+                                    s.type !== 'sequel' &&
+                                    s.type !== 'prequel').length + 1} Seasons` : "1 Season"
+                              }${
+                                review.seasons.filter(s => s.type === 'movie').length >= 1 ? ` • ${review.seasons.filter(s => s.type === 'movie').length} Movies` : ""
+                              }${
+                                review.seasons.filter(s => s.type === 'Spin off').length >= 1 ? ` • ${review.seasons.filter(s => s.type === 'Spin off').length} Spin offs` : ""
+                              }${
+                                review.seasons.filter(s => s.type === 'prequel').length >= 1 ? ` • ${review.seasons.filter(s => s.type === 'prequel').length} Prequels` : ""
+                              }${
+                                review.seasons.filter(s => s.type === 'sequel').length >= 1 ? ` • ${review.seasons.filter(s => s.type === 'sequel').length} Sequels` : ""
+                              }`
                           return (
                               <div>
                                   <a as={"/review/" + review.id.replace(/ /g,'_')} href={'/review/' + review.id.replace(/ /g,'_')}>
@@ -90,7 +112,9 @@ class Reviews extends React.Component {
                                     <div className='card_bg_layer'></div>
 
                                     <div className='card_content'>
+
                                       <div className='card_left'>
+
                                         <div className='card_left_flexbox'>
                                           <div className='card_ratings'>
                                             <img src='../review-images/star.png' id='star' />
@@ -99,6 +123,7 @@ class Reviews extends React.Component {
 
                                           <img src={img} className='card_img' />
                                         </div>
+
                                       </div>
 
                                       <div className='card_right'>
@@ -114,6 +139,7 @@ class Reviews extends React.Component {
                                               })
                                             }
                                           </div>
+                                          <h2 className='card_season'>{season}</h2>
 
                                         </div>
 
@@ -122,6 +148,7 @@ class Reviews extends React.Component {
                                         </div>
 
                                       </div>
+
                                     </div>
                                     </div>
                                   </a>

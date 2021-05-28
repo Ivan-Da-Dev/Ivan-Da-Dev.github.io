@@ -3,6 +3,8 @@ import data from '../../components/review_list.js'
 import Disqus from "disqus-react"
 import Head from "next/head"
 import markdown from "../../components/markdown"
+import ProperCaseModule from "../../components/propercase"
+const toProperCase = ProperCaseModule.toProperCase
 
 export default function Review({ reviewObj }){
     const review = reviewObj.review
@@ -21,6 +23,7 @@ export default function Review({ reviewObj }){
     const _review = 
     `${markdown.markdown(review.review)}`
     const url = `https://oniichann.tk/review/${review.id.replace(/ /g,'_')}`
+    let addSeason = 1
 
     return (
         <div>
@@ -67,6 +70,7 @@ export default function Review({ reviewObj }){
                 <div className="view_content">
 
                     <div className="view_container" id='left'>
+
                         <h1 className="view_title">{title}</h1>
                         <h2 className="view_genres">{
                         review.genres.map(g => {
@@ -75,6 +79,7 @@ export default function Review({ reviewObj }){
                             )
                         })
                         }</h2>
+
                         <h3 className="view_rating">
                             <img src='../review-images/star.png' className='star' />
                             <strong className='card_rating_bigger'>{review.rating}</strong>
@@ -82,6 +87,7 @@ export default function Review({ reviewObj }){
                         <h4 className='view_desc'>
                             {review.desc}
                         </h4>
+
                     </div>
 
                     <div className='view_container' id='right'>
@@ -91,7 +97,78 @@ export default function Review({ reviewObj }){
                 </div>
 
                 <div className='view_container' id='mid'>
-                    <h1 className='label'>Review</h1>
+                    <h1 className='season_label'>Seasons</h1>
+                    <div className='seasons'>
+                        {
+                            review.seasons.length > 1 ?
+                            
+                            // If season isn't empty
+                            review.seasons.map((season) => {
+                                let seasonCount = review.seasons.indexOf(season) + addSeason
+
+                                if(review.seasons[review.seasons.indexOf(season) - 1]){
+                                    if(review.seasons[review.seasons.indexOf(season) - 1].season){
+                                        addSeason = Number(-(review.seasons[review.seasons.indexOf(season) - 1].season - 2))
+                                    }
+                                }
+
+                                if( season.season ){
+                                    seasonCount = season.season
+                                } else {
+                                    seasonCount = review.seasons.indexOf(season) + addSeason
+                                }
+
+                                const season_img = `../review-images/${season.img}`
+                                return (
+                                    <div className='season_card'>
+                                        <div id='top'>
+                                            <img className='season_card_img' src={season_img}></img>
+                                        </div>
+                                        <div id='bot'>
+                                            <h1  className='season_card_title'>{toProperCase(season.title)}</h1>
+                                            <h2  className='season_card_date'>{toProperCase(season.date)}</h2>
+                                            <h3  className='season_card_type'>{toProperCase(
+                                                (season.type === 'anime') ?
+                                                `Season ${
+                                                    seasonCount
+                                                }`
+
+                                                :
+
+                                                season.type === 'movie & anime' ?
+                                                // Check to see if its a season with movies
+                                                `Season ${
+                                                    season.season ? season.season : review.seasons.indexOf(season) + 1
+                                                } • Movie`
+                                                :
+                                                season.type
+                                            )}</h3>
+                                        </div>
+                                    </div>
+                                )
+                            })
+
+                            :
+
+                            <div className='season_card'>
+                                <div id='top'>
+                                    <img className='season_card_img' src={img}></img>
+                                </div>
+                                <div id='bot'>
+                                    <h1  className='season_card_title'>{toProperCase(review.title)}</h1>
+                                    <h2  className='season_card_date'>{toProperCase(review.date)}</h2>
+                                    <h3  className='season_card_type'>{toProperCase(
+                                        (review.genres.includes('movie')) ?
+                                        'Movie'
+                                        :
+                                        'Season 1'        
+                                    )}</h3>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                    <h1 className='review_label'>Review</h1>
                     <h4 className="view_review" dangerouslySetInnerHTML={{__html: _review}}></h4>
                 </div>
 
