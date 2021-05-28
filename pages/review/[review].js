@@ -4,13 +4,14 @@ import Disqus from "disqus-react"
 import Head from "next/head"
 import markdown from "../../components/markdown"
 
-export default function Review({ review }){
+export default function Review({ reviewObj }){
+    const review = reviewObj.review
     const img = `../review-images/${review.img}`
 
     const disqusShortname = "oniichann-tk"
     const disqusConfig = {
-      url: "https://oniichann.tk",
-      identifier: review.title.toLowerCase().replace(/ /g,'_'),
+      url: "https://oniichann.tk/review/" + review.id.replace(/ /g,'_'),
+      identifier: review.id.toLowerCase().replace(/ /g,'_') + `_${reviewObj.id}`,
       title: review.title
     }
 
@@ -101,11 +102,11 @@ export default function Review({ review }){
 }
 
 export async function getStaticProps({ params }) {
-    const review = data.getReviewData(params.review)
+    const reviewObj = data.getReviewData(params.review)
 
     return {
       props: {
-        review
+        reviewObj
       }
     }
 }
