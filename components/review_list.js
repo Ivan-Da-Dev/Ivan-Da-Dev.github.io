@@ -1,6 +1,7 @@
 let list = [
   {
     title: 'to love ru',
+    id: "to love ru",
     rating: 10,
     review: "This anime was the first **nudity anime** that I watched and its the best nudity anime I've ever watched up until now. Its not one of those nudity focused anime, it has comedy and romance in it as well and for the first time in I don't know how long, one of the characters in the anime (Momo Belia Deviluke aka Lala's sister) @./tlr_momo.png@ wanted to created a harem for Rito lmao. It has a nice balance of comedy and ecchi and thats what makes it good compared to other ecchi animes",
     genres: [
@@ -21,6 +22,7 @@ let list = [
   },
   {
     title: 'trinity seven',
+    id: 'trinity seven',
     rating: 10,
     review: `This is the first harem anime where the MC isn't a pussy and actually has balls. If a girl would have ask him "hey do u wanna have sex with me?" he would answer yes with no hesitation, and that's one of the funny aspects about this anime. Not only that but they also have cute characters, one of which is @./yui_kuruta.jpg@ Yui Kuruta, isn't she cute?\n` +
       '\n' +
@@ -37,6 +39,7 @@ let list = [
   },
   {
     title: 'arpeggio of blue steel: ars nova',
+    id: 'ars nova',
     rating: 8,
     review: "This anime is good. Tho sadly, a lot of people don't know it's existence. The plot is there are bad battle ships, the MC's battleship is also one of them but she (yes the battle ship is a girl) rebelled against them and obeyed the MC regardless if it means sinking her own former allies. There is some character development for 1-401 @./ars_nova_img.jpg@ this is her, the battleship I mentioned earlier, she has a robot like attitude at first but at the end, when the MC almost freezed to death, she saved him despite the MC told him not to, that's very touching ya know\n" +
       '\n' +
@@ -51,6 +54,7 @@ let list = [
   },
   {
     title: 'eromanga sensei',
+    id: 'eromanga sensei',
     rating: 8.5,
     review: 'Yes I love incest\n' +
       '\n' +
@@ -67,6 +71,7 @@ let list = [
   },
   {
     title: 'oreimo',
+    id: 'oreimo',
     rating: 6,
     review: 'well....fuck I have to review this anime now\n' +
       '\n' +
@@ -83,6 +88,7 @@ let list = [
   },
   {
     title: 'your name',
+    id: 'your name',
     rating: 8,
     review: "A lot of people said that this is a sad anime so I decided to watch it, and boy it wasn't sad at all. So basically what the movie is about is that theres a boy named Taki and a girl named Mitsuha, he keeps getting his mind swapped with a girl named Mitsuha, this keeps continuing for a few months, they are from different time stamps, meh I'm too lazy to type the whole description, go view it on MAL or somewhere. Taki finds out that Mitsuha's village is gonna get crushed by a meteor, so to save Mitsuha, **he drinks sake and fucking time trvales back in time** :woa:. Anyways, so Taki and Mitsuha both successfully saves Mitsuha's village by evacuting everyone to a place where the meteor won't hit. HOWEVER, since Mitsuha never died, this causes the butterfly effect, Taki never knew who Mitsuha is. But in the end they met when they were adults and Taki kinda recognizes Mitsuha and they lived happily ever after. Why did I rate it a 8? because it didn't make me cry like I expected it to be and hey, if it weren't for the music, I would've gave it a 5",
     genres: [ 'romance' ],
@@ -97,6 +103,7 @@ let list = [
   },
   {
     title: 'grand blue',
+    id: 'grand blue',
     rating: 9.5,
     review: 'This is the best slice of life anime ever. At first I watched this during quarantine because I saw a funny clip on youtube, and boy although the thumbnail of the anime makes u think "oh this is probaly related to diving", well NOPE. Although it may look like a diving related anime but the anime is 10% about diving and 90% about naked men drinking. They did a perfect job of adding slice of life and comedy together, the art style just tops it all, they draw really contrasted faces when its comedy time lmao for example: @./gb_shocked.jpg@ which makes it 100 times funnier',
     genres: [ 'slice of life', 'comedy' ],
@@ -109,6 +116,7 @@ let list = [
   },
   {
     title: 'mayoi neko overrun!',
+    id: 'mayoi neko overrun!',
     rating: 6,
     review: "This anime was kinda boring, theres not really a plot or anything going on. They do random stuff in every episode, but they have a tsundere, yes, a legendary creature @./myno_fumino.gif@ shes called Fumino. If it weren't for her, I would've dropped this anime at episode 3",
     genres: [ 'comedy', 'slice of life' ],
@@ -125,6 +133,7 @@ life of Takumi.\n` +
   },
   {
     title: "a sister's all you need",
+    id: "a sisters all you need",
     rating: 8,
     review: "At first I thought this was a anime that's focused on incest and how having a sister is better than having a normal girl. Why? Because the first 5 minutes of the first episode gave me that idea lmao @./asiayn_imouto_naked.jpg@ I was so excited :blush: but then as I watch further, its a normal slice of life anime<br><br>The reason I still kept watching it despite it not being a nude anime, is that it has a perverted cute girl who wants to have sex with her senpai @./asiayn_sniff.jfif@ and that is the reason for why I am alive, not only that but it also has this other cute girl @./asayn_miyako.png@ (shes 21 btw despite having a loli face) and the fan service on this is... @./asiayn_egg_eating.gif@ not to mention I wanna see how the MC reacts when he knows that he had a little sister all along and the plot is not too bad either, in the end when we all thought the MC had a anime adaption for his LN but in reality he is just a replacement",
     genres: [
@@ -143,6 +152,7 @@ life of Takumi.\n` +
   },
   {
     title: 'i want to eat your pancrease',
+    id: 'i want to eat your pancrease',
     rating: 2,
     review: "Why did I gave it such a low rating? because it was boring and I didn't understand what the meaning of it was. Sakura mentioned that theres a rumor where if one of ur body's organs are failing or something, u eat that, for example, if ur stomach is broken, u eat a stomach\n" +
       '\n' +
@@ -160,6 +170,7 @@ in him about the pancreatic disease she is suffering from and that her time left
   },
   {
     title: 'hello world',
+    id: 'hello world',
     rating: 10,
     review: "This was and will always be the best romance movie, not anime, I've ever watched. The story where the MC discovers that he is actually living in a data world (No one calls it that only I do lmao) inside a database is so good to start with. Then the older or future MC comes and steals his girl lmao <lenny> rip MC. The girl gets stolen but soon brought back to her own world, it is a bit sad that the future MC died. Tho the plot twist in the end tho, we all thought that the girl (Ruri) @./ruri.jpg@ died because a lightning struck her, and thats what I thought happened in the real world as well. But NOPE, it was the MC who died, well not died but was unconcious for the whole time and it was his wife (which is also Ruri btw) who kept trying to bring him back, if you didn't notice this, the animation style in the movie (for the most part) was 3d but when the MC wakes up in his real world, the animation was in 2d as u can see this is\n" +
       '\n' +
@@ -183,6 +194,7 @@ in him about the pancreatic disease she is suffering from and that her time left
   },
   {
     title: 'gabriel dropOut',
+    id: 'gabriel dropout',
     rating: 10,
     review: 'a anime where a top angel at heaven comes to earth and becomes a shut in NEET is very entertaining. They had a character called Satania, shes a demon, and they fucking bullies her for 12 episodes lmaooo @./gd_satania_crying.gif@ Satania never fails to entertain me',
     genres: [ 'comedy', 'school' ],
@@ -197,6 +209,7 @@ in him about the pancreatic disease she is suffering from and that her time left
   },
   {
     title: 'horimiya',
+    id: 'horimiya',
     rating: 7.5,
     review: 'This shows how the MC who was a loner in his past, get a fucking cute girlfriend who likes to be treated like trash. This anime, for the most part, increased my love towards 2d girls. I have nothing much to say about this anime, it is good but it is not good, it is bad but it is not bad\n' +
       '\n' +
@@ -212,6 +225,7 @@ in him about the pancreatic disease she is suffering from and that her time left
   },
   {
     title: 'plastic memories',
+    id: 'plastic memories',
     rating: 10,
     review: `This anime is very good, its the first that make my cry like a little bitch lmao. I thought this was gonna be one of those happy ending animes but NOPE. "What do u mean its sad? Didn't Isla came back to life at the end?" no, remember that they mention they recycle used androids in order to save money? Yeah, they recycled (they removed her old memories and personality) Isla and gave tsukasa the recycled Isla, man thats even worse than Isla dying tbh. Why did this anime make me cry but I didn't cry when I watched "A silent voice"? Men, because this anime has 13 episodes (13 x 24 minutes = 312 minutes) while A silent voice was just 2 hours (120 minutes) long. Not only that but in a silent voice's ending, no one died while in plastic memories's ending, Isla died, well her old self died. And I wouldn't cry if it wasn't for Isla's last speech at the end, its so fucking sad and plus they added sad music in the background. This anime was rated a 10 because its the first and I hope it isn't the last anime to make me cry. It has a solid plot, solid characters and a good name`,
     genres: [ 'romance', 'drama', 'slice of life', 'science', 'sci-fi' ],
@@ -224,6 +238,7 @@ in him about the pancreatic disease she is suffering from and that her time left
   },
   {
     title: 'date a live',
+    id: 'date a live',
     rating: 8,
     review: 'Imagine a anime that makes the MC cheat on his "girlfriends" to save the world, yes, this is that kind of anime\n' +
       '\n' +
@@ -251,6 +266,7 @@ in him about the pancreatic disease she is suffering from and that her time left
   },
   {
     title: 'toradora',
+    id: 'toradora',
     rating: 5,
     review: "Why give it a 5? I'm not really into drama animes, I find them annoying. Why did I watch it? Because I was still a normie when watching this, I was half way through the anime when I found out that I dont like this anime, so I decided that since I've already came this far, might as well finish it. Well I don't have much to say about this anime but Taiga is KAWAI",
     genres: [ 'romance', 'drama', 'school' ],
@@ -265,6 +281,7 @@ in him about the pancreatic disease she is suffering from and that her time left
   },
   {
     title: 'the pet girl of sakura hall',
+    id: 'the pet girl of sakura hall',
     rating: 6,
     review: "At first I thought this was a slice of life anime that had a little drama and romance in it but NOPE. It had alot of drama and thats one reason why I gave it a 6. The other reason why I gave it a 6 is because theres no romance, I thought the MC would end up with Shina or the orange hair girl but they didn't :ah:",
     genres: [
@@ -286,6 +303,7 @@ in him about the pancreatic disease she is suffering from and that her time left
   },
   {
     title: 'danMachi',
+    id: 'danmachi',
     rating: 8,
     review: "The first season was good, it caught all my interest and I end up finishing it in less than 12 hours. But from that point, the anime went downhill for me, the first season gave the MC the target to win aiz's @./danmachi_aiz.png@ heart and be at the same leve as her, but as u can see from the thumbnails of the second and 3rd season, @./danmachi_s2.jpg@ @./danmachi_s3.jpg@ it looks like bell stuck his nose into some bad business which as u can guess, has nothing to do with being equally skilled with aiz nor winning aiz's heart. In fact, in s3, there was one time where bell actually **faught** Aiz in order to save the monsters\n" +
       '\n' +
@@ -302,6 +320,7 @@ in him about the pancreatic disease she is suffering from and that her time left
   },
   {
     title: 'hidan no aria',
+    id: 'hidan no aria',
     rating: 8,
     review: "This was the first anime that I watched, it's pretty good. Aria is the reason I am obessed with 2d girls lmao @./aria.jpg@ and I also like how the MC is super op but he wants to lay low\n" +
       '\n' +
@@ -316,6 +335,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: 'outbreak company',
+    id: 'outbreak company',
     rating: 10,
     review: 'This was the real first anime that I ever watched, I hardly remember anything about this anime (because I watched it when I was 7) and this was what maked me so into anime, it has ecchi, comedy, romance? Regardless, I remembered it was good',
     genres: [ 'comedy', 'fantasy', 'slice of life', 'isekai' ],
@@ -328,6 +348,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: "monthly girls' nozaki-kun",
+    id: "monthly girls nozaki kun",
     rating: 8,
     review: "Ngl, the first episode was funny as fuck look at a romance anime's bike riding scene @./bike_riding_scene@ (Anime: Zankyou no Terror) good right? now look at this anime's @./mgnk_bike_riding.gif@ This anime doesn't focus much on the romance genre, tho there were some romance in it, a little\n" +
       '\n' +
@@ -342,6 +363,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: 'saekano: how to raise a boring girlfriend',
+    id: 'saekano',
     rating: 8,
     review: "It's like toradora, it was comedy at first and then a shit ton of drama at the end. I felt bad for the girls at the end who couldn't be with the MC but thats all there is to it, the plot is good, characters, good, drama, bad",
     genres: [ 'romance', "creator's slice of life", 'comedy' ],
@@ -356,6 +378,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: 'monogatari series',
+    id: 'monogatari series',
     rating: 10,
     review: "I started with kizumonogatari, meaning I watched the most brutal scenes among the monogatari series. If you started with kizumonogatari and dropped it because of the brutality, well you can ignore my opinion but you should keep continuing. The monogatari series isn't as brutal as kizu makes it look like. Its really interesting the way they animate and plan the timeline. The monogatari series is the best mystery anime imo, because they don't air the anime according to its plot's timeline, they would randomly air a season and then air another season on a completely different timeline as you can tell from each season's release date. Not only that but what makes it godly to me is the way they animate it, have you ever wondered what a anime with 98% text look like? Well that would be the monogatari series, not only does Araragi talk all the time, but they even add text flash scenes which look like this: @./monogatari_flash_scene.png@ that always irritates me because I would have to go back and pause the video to look what it said (altho I usually ignore them). Well in case you read this and you want to watch the monogatari series according to the order I watched, [press me to watch the monogatari series on a pirated anime website](https://animedao.to/anime/kizumonogatari/)",
     genres: [
@@ -380,6 +403,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: 'my sister my writer',
+    id: 'my sister my writer',
     rating: 9,
     review: 'Before you ask why tf would u give this a 9, look at this @./msmw_nudity.jpg@ IS THAT NOT THE MOST CUTEST CREATURE YOU HAVE EVER SEEN???\n' +
       '\n' +
@@ -403,6 +427,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: 'myriad colors phantom world',
+    id: 'myriad colors phantom world',
     rating: 9.5,
     review: `Absolutely loved this anime. It ranks #1 in among all scenario animes I've watched (scenario animes are animes that has a different situation for each episode, each episode theres new content and none or not much of it was taken from the previous episode, it could also be called a "no plot" anime). It has cute characters @./mcpw_characters.jpg@ even the villians are cute @./mcpw_villian.jpg@ it makes me relax everytime when watching this anime. Sad that it couldn't get a season 2 but it'll remain in my memory as the best scenario anime`,
     genres: [ 'comedy', 'supernatural', 'romance', 'slice of life' ],
@@ -415,6 +440,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: 'a certain magical index',
+    id: 'a certain magical index',
     rating: 9,
     review: "I have finished **all** seasons about A Certain Magical Index. I LOVED IT, it has action, comedy and harem. Not only that but it has adventure too (now you're concept of adventure might be different than mine, adventure in my mind means going to places), every time I look back at this anime, it makes me feel nostalgic. This anime was always entertaining me during quarantine. Tho the reason why I gave it a 9 was because of Index, shes fucking useless but shes fucking funny and cute too. So shes a good character when it comes to anything other than fighting, shes a good support, knowledgeable, annoying, cute and lazy",
     genres: [ 'magic', 'comedy', 'action', 'harem' ],
@@ -433,6 +459,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: 'recently, my sister is unusual',
+    id: 'recently my sister is unusual',
     rating: 8,
     review: 'I found this anime when I typed "saiki" in the search bar because I wanted to watch **The Disastrous Life of Saiki K.** and this anime popped up at the corner of my eye lmao. The anime is what you would expect, alot of fan service, not much plot, well that plot involves fan service. The sister is forced to love her brother but slowly she does love him\n' +
       '\n' +
@@ -449,6 +476,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: "hensuki",
+    id: "hensuki",
     rating: 7,
     review: `Watched this anime when I was a normie and its pretty good. I like how they used a cinderella reference but with panties, and that the mc is looking for this "cinderella" but ignores all the cute girls he has surrounding him. I would've preferred him dating his sister in the end (btw his sister was the cinderella), don't worry, they are not blood related, but the MC still can't do it, what a pussy am I right?`,
     genres: [ 'comedy', 'ecchi', 'school', 'harem', 'romance' ],
@@ -461,6 +489,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: 'the demon girl next door',
+    id: 'the demon girl next door',
     rating: 10,
     review: "A anime where the MC has to kill a magic girl in order to regain their clan's power is a dark anime @./tdgnd_sowwy.jpg@ but if its this anime then there shall be no darkness\n" +
       '\n' +
@@ -475,6 +504,7 @@ emotional hurricane and outspoken prodigy of the highest rank, Aria Holmes Kanza
   },
   {
     title: 'darling in the franxx',
+    id: 'darling in the franxx',
     rating: 10,
     review: `This was the first anime that I watched. Half of it was good. 'U sick bastard how can u not enjoy darling in the franxx', well I prefer the 02 that loves to tease the MC but when they maked up at episode 6 or 7 or 8, 02 completely changed from a teaser to a normal girl, I rated it 10 because the plot is very good lmao. I didn't expect 02 and the MC to be giant spaceships and die together in the end. I ALSO DIDN'T EXPECT THOSE 2 KIDS TO HAVE SEX AND HAVE A BABY HOLY FUC- Oh I lost my composure there. I love it how they use the power system, whats a "power system" u ask? For example, 02 has the authority to go wherever she wants and do what she wants. They know what 02 is doing but they can't stop her because shes plays a important role too, I like how 02 keeps saying darling, this 
 anime also feels nostalgic when thinking back`,
@@ -496,6 +526,7 @@ Hiro. Finding her partner dead, Zero Two invites Hiro to pilot the mecha with he
   },
   {
     title: 'noragami',
+    id: 'noragami',
     rating: 10,
     review: "I was looking for animes that were similar to the [Monogatari Anime](https://oniichann.tk/reviews/?anime=monogatari%20series) and Noragami was on the list. This anime was pretty normal...action...gods etc. Tho the character development is **yes**, it has the best character development among all the animes I've watched, the characters weren't drawn so good and yet they look so good",
     genres: [ 'comedy', 'slice of life', 'supernatural' ],
@@ -516,12 +547,15 @@ exports.ids = () => {
   return list.map(anime => {
     return {
       params: {
-        review: encodeURIComponent(anime.title.toLowerCase())
+        review: anime.id.replace(/ /g,'-')
       }
     }
   })
 }
 
-exports.getReviewData = (title) => {
-  return list.find(anime => anime.title.toLowerCase() === decodeURIComponent(title).toLowerCase())
+exports.getReviewData = (id) => {
+  return {
+    review: list.find(anime => anime.id === id.replace(/-/g,' ')),
+    id: list.indexOf(list.find(anime => anime.id === id.replace(/-/g,' ')))
+  }
 }
