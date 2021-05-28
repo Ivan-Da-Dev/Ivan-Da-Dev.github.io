@@ -15,7 +15,7 @@ export default function Review({ reviewObj }){
       title: review.title
     }
 
-    const bgImg = `../review-images/${review.bg}`
+    const bgImg = `https://oniichann.tk/review-images/${review.bg}`
     const title = `${review.title.substring(0,1).toUpperCase()}${review.title.slice(1)}`
     const meta_desc = `Read Onii-chan's review on ${review.title} with a rating of ${review.rating}. ${review.desc}`
     const _review = 
