@@ -35,6 +35,8 @@ export default function Review({ reviewObj }){
                 <meta name="keywords" content="Anime Reviews" />
                 <meta name="keywords" content="Shitty Anime Reviews" />
                 <meta name="keywords" content={review.title} />
+                <meta data-vmid="twitter:card" name="twitter:card" content="summary_large_image" data-vue-meta="true"></meta>
+                
             </Head>
 
             <div className="nav_bar">
