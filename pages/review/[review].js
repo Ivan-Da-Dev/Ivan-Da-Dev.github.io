@@ -27,8 +27,6 @@ export default function Review({ reviewObj }){
                 <link rel="icon" href="../review-images/icon.png" />
                 <title>{title}</title>
 
-                <meta property="og:title" content={title}></meta>
-                <meta property="og:type" content="website"></meta>
                 <meta property="og:site_name" content="Onii CHANN"></meta>
                 <meta name="description" content={meta_desc} />
                 <meta property="og:image" content={bgImg} data-vue-meta="true"></meta>
