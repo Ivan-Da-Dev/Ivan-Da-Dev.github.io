@@ -10,7 +10,7 @@ export default function Review({ review }){
     const disqusShortname = "oniichann-tk"
     const disqusConfig = {
       url: "https://oniichann.tk",
-      identifier: review.title.toLowerCase().replace(/ /g,'-'),
+      identifier: review.title.toLowerCase().replace(/ /g,'_'),
       title: review.title
     }
 
