@@ -12,6 +12,10 @@ class Waifus extends React.Component {
           title: "waifus"
         }
 
+        const bgImg = `../waifu-images/harem.jpg`
+        const url = 'https://oniichann.tk/waifus'
+        const desc = "I have a harem that almost everyone is jealous of. It consists of lolis, milfs and normal girls"
+
         return (
             <div>
             <Head>
@@ -20,6 +24,13 @@ class Waifus extends React.Component {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Waifus</title>
                 <link rel="icon" href="../waifu-images/icon.png" />
+
+                <meta property="og:title"       content="Onii Chan's Waifus"    data-vue-meta="true"></meta>
+                <meta property="og:description" content={desc}                  data-vue-meta="true"></meta>
+                <meta property="og:image"       content={bgImg}                 data-vue-meta="true"></meta>
+                <meta property="og:url"         content={url}                   data-vue-meta="true"></meta>
+                <meta name="description"        content={desc}                  data-vue-meta="true"></meta>
+                <meta name="twitter:card"       content="summary_large_image"   data-vue-meta="true"></meta>
 
                 <meta name="description" content="My waifus" />
                 <meta property="og:image" content="./images/icon.png" />
@@ -32,13 +43,6 @@ class Waifus extends React.Component {
                 <a href="https://oniichann.tk/waifus">Waifus</a>
                 <a href="https://oniichann.tk/reviews">Reviews</a>
             </div>
-
-            {/* <div id="nsfw_layer">
-                <img src="./images/chotto_matte.jpg" />
-                <h1>This review contains NSFW content that may be unsuitable for some users, do you wish to proceed?</h1>
-                <button id="proceed" onclick="proceed()">Yes, let me in</button>
-                <button id="go_back" onclick="go_back()">No, take me back</button>
-            </div> */}
 
             <div class="body">
                 {
@@ -62,7 +66,7 @@ class Waifus extends React.Component {
 
                                     <div className='waifu_card_right'>
                                         <h1 className='waifu_card_name'> { toPropercase(waifu.name) } </h1>
-                                        <a className='waifu_card_anime' href={'../review/' + encodeURIComponent(waifu.anime.toLowerCase())}> { toPropercase(waifu.anime) } </a>
+                                        <a className='waifu_card_anime' href={'../review/' + waifu.anime.toLowerCase().replace(/ /g,'_')}> { toPropercase(waifu.anime) } </a>
                                     </div>
                                 </div>
 

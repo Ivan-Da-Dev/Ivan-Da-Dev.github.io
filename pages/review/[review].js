@@ -91,6 +91,7 @@ export default function Review({ reviewObj }){
                     </div>
 
                     <div className='view_container' id='right'>
+                        <div className='view_container_right_fill'></div>
                         <img id="view_img" src={img} />
                     </div>
 
@@ -135,7 +136,7 @@ export default function Review({ reviewObj }){
 
                                                 :
 
-                                                season.type === 'movie & anime' ?
+                                                season.type === 'movie & anime' || season.type === 'anime & movie' ?
                                                 // Check to see if its a season with movies
                                                 `Season ${
                                                     season.season ? season.season : review.seasons.indexOf(season) + 1

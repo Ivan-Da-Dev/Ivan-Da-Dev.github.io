@@ -87,7 +87,7 @@ class Reviews extends React.Component {
                                   s.type !== 'Spin off' && 
                                   s.type !== 'sequel' &&
                                   s.type !== 'prequel'
-                                  ).length >= 1 ? `${review.seasons.filter(s => 
+                                  ).length - 1 >= 1 ? `${review.seasons.filter(s => 
                                     s.type !== 'movie' && 
                                     s.type !== 'Spin off' && 
                                     s.type !== 'sequel' &&
