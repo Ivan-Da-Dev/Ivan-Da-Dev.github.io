@@ -5,6 +5,12 @@ let list = [
     date: "April 3, 2008",
     seasons: [
       {
+        title: "to love ru",
+        img: "tlr_img.jpg",
+        type: "anime",
+        date: "April 3, 2008"
+      },
+      {
         title: "motto to love ru",
         img: "tlr_s2.jpg",
         type: "anime",
@@ -47,6 +53,12 @@ let list = [
     date: "October 7, 2014",
     seasons: [
       {
+        title: "trinity seven",
+        img: "trinity_seven_img.jpg",
+        date: "October 7, 2014",
+        type: "anime"
+      },
+      {
         title: "Eternity Library to Alchemic Girl",
         img: "trinity_seven_mv_1.jpg",
         date: "February 25, 2017",
@@ -78,6 +90,12 @@ let list = [
     id: 'ars nova',
     date: "October 3, 2015",
     seasons: [
+      {
+        title: "arpeggio of blue steel: ars nova",
+        img: "ars_nova_img.jpg",
+        date: "October 3, 2015",
+        type: "anime"
+      },
       {
         title: "Ars Nova DC",
         img: "ars_nova_mv_1.jpg",
@@ -128,6 +146,12 @@ let list = [
     date: "October 3, 2010",
     seasons: [
       {
+        title: "oreimo",
+        img: "oreimo_img.jpg",
+        date: "October 3, 2010",
+        type: "anime"
+      },
+      {
         title: "oreimo 2",
         img: "oreimo_s2.jpg",
         date: "April 7, 2013",
@@ -155,7 +179,7 @@ let list = [
     seasons: [],
     rating: 8,
     review: "A lot of people said that this is a sad anime so I decided to watch it, and boy it wasn't sad at all. So basically what the movie is about is that theres a boy named Taki and a girl named Mitsuha, he keeps getting his mind swapped with a girl named Mitsuha, this keeps continuing for a few months, they are from different time stamps, meh I'm too lazy to type the whole description, go view it on MAL or somewhere. Taki finds out that Mitsuha's village is gonna get crushed by a meteor, so to save Mitsuha, **he drinks sake and fucking time trvales back in time** :woa:. Anyways, so Taki and Mitsuha both successfully saves Mitsuha's village by evacuting everyone to a place where the meteor won't hit. HOWEVER, since Mitsuha never died, this causes the butterfly effect, Taki never knew who Mitsuha is. But in the end they met when they were adults and Taki kinda recognizes Mitsuha and they lived happily ever after. Why did I rate it a 8? because it didn't make me cry like I expected it to be and hey, if it weren't for the music, I would've gave it a 5",
-    genres: [ 'romance' ],
+    genres: [ 'romance','movie' ],
     img: 'your_name_img.jpg',
     bg: 'your_name_bg.webp',
     desc: 'Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo—a dream that stands in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a high school student while juggling his part-time job and hopes for a future in architecture.\n' +
@@ -187,7 +211,7 @@ let list = [
     seasons: [],
     rating: 6,
     review: "This anime was kinda boring, theres not really a plot or anything going on. They do random stuff in every episode, but they have a tsundere, yes, a legendary creature @./myno_fumino.gif@ shes called Fumino. If it weren't for her, I would've dropped this anime at episode 3",
-    genres: [ 'comedy', 'slice of life' ],
+    genres: [ 'comedy', 'slice of life','harem' ],
     img: 'mno_img.jpg',
     bg: 'mno_bg.jpg',
     desc: `Takumi Tsuzuki is a high school student who attends the Umenomori Private Academy, free of charge, alongside Fumino Serizawa, a childhood friend of his whom always says the opposite of what 
@@ -231,7 +255,7 @@ life of Takumi.\n` +
       `The anime is like SAO, it was good for 12 episodes, but it went downhill, wait, no. This anime wasn't good to begin with, the plot keeps telling us that Sakura was gonna die of her pancrease failing to work but in the end, surprise surprise, she gets murdered. "..." was what I thought when I saw that, well it didn't felt sad at all. If she was dying and the MC was besides her death bed, I would tear up a bit (probaly not) but instead they were like "holy fuck it's been 1 hour 32 minutes, aight lets murder Sakura because we are running out of budget"\n` +
       '\n' +
       'Bet alot of people who cried at the movie will say my review is shit and that I should be the one dying and not Sakura but guess what, my reviews are shit tho I am still gonna live as healthy as Sakura',
-    genres: [ 'romance' ],
+    genres: [ 'romance','movie' ],
     img: 'iwteyp_img.jpg',
     bg: 'iwteyp_bg.jpg',
     desc: `The aloof protagonist: a bookworm who is deeply detached from the world he resides in. He has no interest in others and is firmly convinced that nobody has any interest in him either. His story begins when he stumbles across a handwritten book, titled "Living with Dying." He soon identifies it as a secret diary belonging to his popular, bubbly classmate Sakura Yamauchi. She then confides 
@@ -245,6 +269,12 @@ in him about the pancreatic disease she is suffering from and that her time left
     id: 'hello world',
     date: "September 11, 2019",
     seasons: [
+      {
+        title: "hello world",
+        img: "hello_world_img.jpg",
+        date: "September 11, 2019",
+        type: "movie & anime"
+      },
       {
         title: "another world",
         img: "hello_world_s2.jpg",
@@ -263,7 +293,7 @@ in him about the pancreatic disease she is suffering from and that her time left
       '\n' +
       '\n' +
       'I have finished watching the sequel for it, and boy, not gonna lie I was dissapointed. I was hoping, since its a sequel, that they would make another movie or heck turn it into half season or full season anime but nope, all I saw was 3 OVAs showing how the MC spent his life after 10 years',
-    genres: [ 'action', 'isekai', 'romance', 'science fiction' ],
+    genres: [ 'action', 'isekai', 'romance', 'science fiction','movie' ],
     img: 'hello_world_img.jpg',
     bg: 'hello_world_bg.jpg',
     desc: 'The year is 2027, and the city of Kyoto has undergone tremendous technological advancement. Within the city lives Naomi Katagaki, a socially awkward and introverted boy with a love for books, and Ruri Ichigyou, a girl with a cold personality who is often blunt with people, but shares his love for reading. Despite having similar interests, Naomi is afraid to approach Ruri due to her unfriendly nature.\n' +
@@ -328,6 +358,12 @@ in him about the pancreatic disease she is suffering from and that her time left
     id: 'date a live',
     date: "April 6, 2013",
     seasons: [
+      {
+        title: "date a live",
+        img: "dal_img.jpg",
+        date: "April 6, 2013",
+        type: "anime"
+      },
       {
         title: "Date A Live II",
         img: "dal_s2.jpg",
@@ -425,6 +461,12 @@ in him about the pancreatic disease she is suffering from and that her time left
     date: "April 3, 2015",
     seasons: [
       {
+        title: "danMachi",
+        img: "danmachi_img.jpg",
+        date: "April 3, 2015",
+        type: "anime"
+      },
+      {
         title: "Arrow of the Orion",
         img: "danmachi_mv_1.jpg",
         date: "February 15, 2019",
@@ -463,6 +505,12 @@ in him about the pancreatic disease she is suffering from and that her time left
     date: "April 15, 2011",
     seasons: [
       {
+        title: "Aria the Scarlet Ammo",
+        img: "hna_img.jpg",
+        date: "April 15, 2011",
+        type: "anime"
+      },
+      {
         title: "Aria the Scarlet Ammo Double A",
         img: "hna_spinoff_1.jpg",
         date: "October 6, 2015",
@@ -470,7 +518,7 @@ in him about the pancreatic disease she is suffering from and that her time left
       }
     ],
     rating: 8,
-    review: "This anime was the first anime I watched that I liked and didn't like at the same time @./hna_bg.jpg@ The plot is the city is full of bad guys, and theres a school where they train students to fight criminals (they are called brutei). Kinji has a special skill where he could go into OP mode if he gets turned on. Together with Aria, who is a S rank brutei, they fight criminals\n\nSo the plot is very simple and sounds boring but the anime is pretty good if it had filled their plot hole. If u don't know what plot hole I'm talking about, let me explain. Kinji mentioned that his brother **died** in a shipwreck accident because he saved everyone on the ship, but in one episode, when Kinji and Aria were fighting Riko Mine @./riko_mine.jpg@ she mentions that Kinji's brother is **her boyfriend**, no, not in the past, **is her current boyfriend**. I was like \"wait wasn't Kinji's brother dead?\", Kinji did ask Riko what she meant but she didn't answer him\n\nIf they had explained what really happend to Kinji's brother, this anime would be more popular. Like for a 2011 anime, the animation, voice actors and plot were very good. It had a little mystery, a lot of action, some romance and of course, some hight quality fanservice. Overall this would get a 8/10 for me because of the plot hole and the fact that theres no season 2",
+    review: "This anime was the first anime I watched that I liked and didn't like at the same time @./hna_bg.jpg@ The plot is the city is full of bad guys, and theres a school where they train students to fight criminals (they are called brutei). Kinji has a special skill where he could go into OP mode if he gets turned on. Together with Aria, who is a S rank brutei, they fight criminals\n\nSo the plot is very simple and sounds boring but the anime is pretty good if it had filled their plot hole. If u don't know what plot hole I'm talking about, let me explain. Kinji mentioned that his brother **died** in a shipwreck accident because he saved everyone on the ship, but in one episode, when Kinji and Aria were fighting Riko Mine @./riko_mine@ she mentions that Kinji's brother is **her boyfriend**, no, not in the past, **is her current boyfriend**. I was like \"wait wasn't Kinji's brother dead?\", Kinji did ask Riko what she meant but she didn't answer him\n\nIf they had explained what really happend to Kinji's brother, this anime would be more popular. Like for a 2011 anime, the animation, voice actors and plot were very good. It had a little mystery, a lot of action, some romance and of course, some hight quality fanservice. Overall this would get a 8/10 for me because of the plot hole and the fact that theres no season 2",
     genres: [ 'comedy', 'ecchi', 'romance', 'action' ],
     img: 'hna_img.jpg',
     bg: 'hna_bg.jpg',
@@ -482,6 +530,12 @@ in him about the pancreatic disease she is suffering from and that her time left
     id: 'Aria the Scarlet Ammo Double A',
     date: "October 6, 2015",
     seasons: [
+      {
+        title: "Aria the Scarlet Ammo Double A",
+        img: "hna_spinoff_1.jpg",
+        date: "October 6, 2015",
+        type: "anime"
+      },
       {
         title: "Aria the Scarlet Ammo",
         img: "hna_img.jpg",
@@ -536,6 +590,12 @@ in him about the pancreatic disease she is suffering from and that her time left
     id: 'saekano',
     date: "January 9, 2015",
     seasons: [
+      {
+        title: "Saekano: how to raise a boring girlfriend",
+        img: "saekano_img.jpg",
+        date: "January 9, 2015",
+        type: "anime"
+      },
       {
         title: "Saekano: how to raise a boring girlfriend flat",
         img: "saekano_s2.jpg",
@@ -731,9 +791,15 @@ in him about the pancreatic disease she is suffering from and that her time left
     date: "October 4, 2008",
     seasons: [
       {
+        title: "a certain magical index",
+        img: "index_img.jpg",
+        date: "October 4, 2008",
+        type: "anime"
+      },
+      {
         title: "a certain magical index II",
         img: "index_s2.jpg",
-        date: "",
+        date: "October 8, 2010",
         type: "anime"
       },
       {
@@ -768,7 +834,7 @@ in him about the pancreatic disease she is suffering from and that her time left
     bg: 'index_bg.jpg',
     desc: 
     `
-    The story is set in Academy City (学園都市, Gakuen Toshi), a technologically advanced independent city-state located in the west of Tokyo known for its educational and research institutions. Tōma Kamijō is a student in Academy City whose right hand, the Imagine Breaker, has the ability to negate any supernatural power, but also negates his own luck, much to his chagrin. One day, Tōma meets a young English girl named Index – a nun from Necessarius, a secret magic branch of the Church of England, whose mind has been implanted with the Index Librorum Prohibitorum – 103,000 forbidden magical books that the Church has stored in secret locations. His encounter with her leads him to meet others from the secret worlds of science and magic. Tōma's unusual power places him at the center of conflicts between the Sorcerers and Espers in Academy City who try to unravel the secrets behind Academy City, Index, and Tōma's own special power.
+    The story is set in Academy City (Gakuen Toshi), a technologically advanced independent city-state located in the west of Tokyo known for its educational and research institutions. Tōma Kamijō is a student in Academy City whose right hand, the Imagine Breaker, has the ability to negate any supernatural power, but also negates his own luck, much to his chagrin. One day, Tōma meets a young English girl named Index – a nun from Necessarius, a secret magic branch of the Church of England, whose mind has been implanted with the Index Librorum Prohibitorum – 103,000 forbidden magical books that the Church has stored in secret locations. His encounter with her leads him to meet others from the secret worlds of science and magic. Tōma's unusual power places him at the center of conflicts between the Sorcerers and Espers in Academy City who try to unravel the secrets behind Academy City, Index, and Tōma's own special power.
 
     Besides its own manga adaptation, the series also has two manga series which are side stories focusing on other main characters. One of them is A Certain Scientific Railgun, which focuses on Mikoto Misaka, an Electromaster and one of the most powerful Espers in the city. The second, A Certain Scientific Accelerator, focuses on Accelerator, a teenager who can control vectors, known as the most powerful Esper in Academy City.
     `,
@@ -858,6 +924,12 @@ anime also feels nostalgic when thinking back`,
     date: "January 5, 2014",
     seasons: [
       {
+        title: "noragami",
+        img: "noragami_img.jpg",
+        date: "January 5, 2014",
+        type: "anime"
+      },
+      {
         title: "noragami aragoto",
         img: "noragami_s2.jpg",
         date: "October 2, 2015",
@@ -875,6 +947,23 @@ anime also feels nostalgic when thinking back`,
       '\n' +
       "Just as things seem to be looking grim for the god, his fortune changes when a middle school girl, Hiyori Iki, supposedly saves Yato from a car accident, taking the hit for him. Remarkably, she survives, but the event has caused her soul to become loose and hence able to leave her body. Hiyori demands that Yato return her to normal, but upon learning that he needs a new partner to do so, reluctantly agrees to help him find one. And with Hiyori's help, Yato's luck may finally be turning around.",
     alt: [ '' ]
+  },
+  {
+    title: "Busou Shoujo Machiavellianism",
+    id: "busou shoujo machiavellianism",
+    date: "April 5, 2017",
+    seasons: [],
+    rating: 7,
+    review: "A action-harem anime where the MC is somewhat OP @./busou_bg.jpg@ The plot is where the MC, a ex-delinquent transfer to a school where theres a lot of femdom, yes **fendom**. Women who goes to that school carries weapons (like a baton or a stick) and 5 of the girls (the student councils) there are allowed to carry real swords. The MC just wants to spend his highschool life peacefully but of course, he does not. He walk into the school knowing that he couldn't get out but in episode 2 he discovers theres a card that lets u go out anytime u want, but you would need a stamp from each of the student councils. So he went into the school in episode 1 and immediately wants to leave it in episode 2, he spends like 10 episodes collecting stamps and also batteling the student council members to get a stamp from them.\n\nI thought this was a action focused anime at first but it isn't, while there are some action scenes, they're not overwhelming or makes u hype up when knowing a fight scene is about to happen. The are fanservice too, its decent, just the normal, but that aside, they have fucking cute characters @./busou_satori.jpg@ @./busou_hana.jpg@ @./busou_mary.jpg@ @./busou_inaba.jpg@ aren't they cute?\n\nWell overall I'd give it a 7 because it didn't have much of a interesting plot and meh meh fight scenes",
+    genres: ['harem','action','school','op mc'],
+    img: "busou_img.jpg",
+    bg: "busou_bg.jpg",
+    desc: `The Private Aichi Symbiosis Academy was originally a high school for high-class girls. When it became co-ed, the girls, out of fear, asked to be permitted to bring weapons to school. When that was enforced, a five-member vigilante corps-like organization called the "Supreme Five Swords" was also formed.
+
+    After many generations, the five swords eventually became a group which corrected problematic students, and the academy started proactively accepting such students in order to correct them.
+
+    Nomura Fudou was sent to this school after being part of a huge brawl. What will he do when the only options he has after enrolling are being expelled from that school or being corrected the way the rest of the male students there were...by being forced to dress and act like a girl!`,
+    alt: ['']
   }
 ]
 

@@ -25,7 +25,7 @@ let waifus = [
     },
     {
         name: "Kai Nayuta",
-        anime: "a sister's all you need",
+        anime: "a sisters all you need",
         img: "kani_img.jpg",
         bg: "kani_bg.png"
     },
