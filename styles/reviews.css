@@ -140,6 +140,7 @@ a {
 
 .anime_list .card .card_right .card_right_top .card_genres {
     margin-left: 10px;
+    width: 100%;
 }
 
 .anime_list .card .card_right .card_right_top .card_genres strong:hover{
@@ -305,8 +306,14 @@ a {
         font-size: 3rem;
     }
 
+    .anime_list .card .card_right .card_right_top .card_genres {
+        display: inline-block;
+    }
+    
     .anime_list .card .card_right .card_right_top .card_genres strong{
         font-size: 1.5rem;
+        display: inline-flex;
+        flex-direction: column;
     }
 
     /* Right Bot */
@@ -380,8 +387,14 @@ a {
         font-size: 2.5rem;
     }
 
+    .anime_list .card .card_right .card_right_top .card_genres {
+        display: inline-block;
+    }
+
     .anime_list .card .card_right .card_right_top .card_genres strong{
         font-size: 1.2rem;
+        display: inline-flex;
+        flex-direction: column;
     }
 
     /* Right Bot */
