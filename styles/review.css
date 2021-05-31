@@ -99,6 +99,7 @@ body,html {
 
 .view_container#left .view_genres {
     margin-left: 1%;
+    display: inline-block;
 }
 
 .view_container#left .view_genres strong:hover{
@@ -119,6 +120,9 @@ body,html {
     transition: 0.2s;
 
     margin-right: 0.5%;
+
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .view_container#left .view_rating {
@@ -337,6 +341,7 @@ body,html {
         border-radius: 5px;
 
         border: none;
+        background-color: transparent;
     }
     
     .view_container#right img {
