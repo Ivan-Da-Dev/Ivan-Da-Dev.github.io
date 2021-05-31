@@ -5,6 +5,7 @@ import Head from "next/head"
 import markdown from "../../components/markdown"
 import ProperCaseModule from "../../components/propercase"
 const toProperCase = ProperCaseModule.toProperCase
+import NavBar from "../../components/navbar"
 
 export default function Review({ reviewObj }){
     const review = reviewObj.review
@@ -23,7 +24,7 @@ export default function Review({ reviewObj }){
     const _review = 
     `${markdown.markdown(review.review)}`
     const url = `https://oniichann.tk/review/${review.id.replace(/ /g,'_')}`
-    let addSeason = 0
+    let addSeason = 1
 
     return (
         <div>
@@ -47,11 +48,7 @@ export default function Review({ reviewObj }){
 
             </Head>
 
-            <div className="nav_bar">
-                <a href="https://oniichann.tk">Home</a>
-                <a href="https://oniichann.tk/waifus">Waifus</a>
-                <a href="https://oniichann.tk/reviews">Reviews</a>
-            </div>
+            <NavBar></NavBar>
 
             <img className='view_bg' src={bgImg}></img>
             <div className="view">
