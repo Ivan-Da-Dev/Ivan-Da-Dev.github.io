@@ -23,7 +23,7 @@ export default function Review({ reviewObj }){
     const _review = 
     `${markdown.markdown(review.review)}`
     const url = `https://oniichann.tk/review/${review.id.replace(/ /g,'_')}`
-    let addSeason = 1
+    let addSeason = 0
 
     return (
         <div>
