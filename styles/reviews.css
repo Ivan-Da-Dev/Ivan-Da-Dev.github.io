@@ -255,7 +255,7 @@ a {
     /* Left */
     .anime_list .card {
         width: 95%;
-        margin: 30px;
+        margin-bottom: 30px;
     }
 
     .anime_list .card .card_content {
@@ -331,7 +331,7 @@ a {
     .anime_list .card {
         width: 95%;
         background-color: #3c3f5c;
-        margin: 30px;
+        margin-bottom: 30px;
     }
 
     .anime_list .card .card_bg,
