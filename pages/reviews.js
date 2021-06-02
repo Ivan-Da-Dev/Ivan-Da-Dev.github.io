@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import useState from 'react'
 import Head from "next/head"
 import list from '../components/review_list.js'
 import Disqus from "disqus-react"
 import getSeasonModule from "../components/getseason.js"
 const getSeason = getSeasonModule.getSeason
+import Navbar from "../components/navbar"
 
 class Reviews extends React.Component {
     constructor(){
@@ -18,7 +18,7 @@ class Reviews extends React.Component {
     render() {      
       const disqusShortname = "oniichann-tk"
       const disqusConfig = {
-        url: "https://oniichann.tk",
+        url: "https://oniichann.tk/reviews",
         identifier: "reviews",
         title: "reviews"
       }
@@ -27,7 +27,7 @@ class Reviews extends React.Component {
         <div>
             <Head>
                 <meta charset="UTF-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Reviews</title>
                 <link rel="icon" href="../review-images/icon.png" />
@@ -41,36 +41,19 @@ class Reviews extends React.Component {
                 <meta name="keywords" content="Shitty Anime Reviews" />
             </Head>
 
-            <div className="nav_bar">
-                <a href="https://oniichann.tk">Home</a>
-                <a href="https://oniichann.tk/waifus">Waifus</a>
-                <a href="https://oniichann.tk/reviews">Reviews</a>
-            </div>
-
-            {/* <div class="search_bar" id="search_bar" style={{ display: "inherit" }}>
-                <form class="search" id="form">
-                    <input type="text" id="search_input" name="search_label" autocomplete="off" placeholder="Search a anime review..." /><br />
-                    <input type="submit" value="Search" class="search_btns" id="submit" />
-                </form>
-                <button id="clear_btn" onclick="clearRes()" class="search_btns">Clear</button>
-            </div>
-
-            <div class="display_results"></div> */}
+            <Navbar></Navbar>
 
             {
               this.state.categories.map(cat => {
-                
                 return (
                   <div class="anime_list" id={cat} style={{display: 'inherit'}}>
                       <h1 id="iden">{cat}</h1>
                       
                       {
+                        this.state.reviews.filter(r => r.title.toLowerCase().startsWith(cat.toLowerCase())).length < 1 ?
+                          <h2 className='empty'>No reviews yet</h2>
+                        :
                       this.state.reviews.filter(r => r.title.toLowerCase().startsWith(cat.toLowerCase())).map(review => {
-                        if(this.state.reviews.filter(r => r.title.toLowerCase().startsWith(cat.toLowerCase())).length === 0){
-                          return (
-                          <h1 className='no-reviews'>No reviews yet</h1>
-                          )
-                        } else {
                               const newDesc = review.desc.split(/\n/g).map(g => {
                                 return(
                                   <div>
@@ -117,7 +100,7 @@ class Reviews extends React.Component {
 
                                         <div className='card_left_flexbox'>
                                           <div className='card_ratings'>
-                                            <img src='../review-images/star.png' id='star' />
+                                            {/* <img src='../review-images/star.png' id='star' /> */}
                                             <strong id='card_rating_bigger'>{review.rating}</strong>
                                           </div>
 
@@ -154,7 +137,6 @@ class Reviews extends React.Component {
                                   </a>
                               </div>
                             )
-                          }
                         })
                       }
 

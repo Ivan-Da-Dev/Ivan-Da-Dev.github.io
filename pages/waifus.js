@@ -2,12 +2,13 @@ import React from "react"
 import Head from "next/head"
 import waifus from "../components/waifu_list.js"
 import Disqus from "disqus-react"
+import Navbar from "../components/navbar"
 
 class Waifus extends React.Component {
     render() {
         const disqusShortname = "oniichann-tk"
         const disqusConfig = {
-          url: "https://oniichann.tk",
+          url: "https://oniichann.tk/waifus",
           identifier: "waifus",
           title: "waifus"
         }
@@ -20,7 +21,7 @@ class Waifus extends React.Component {
             <div>
             <Head>
                 <meta charset="UTF-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Waifus</title>
                 <link rel="icon" href="../waifu-images/icon.png" />
@@ -38,11 +39,7 @@ class Waifus extends React.Component {
                 <meta name="keywords" content="Waifu" />
             </Head>
 
-            <div className="nav_bar">
-                <a href="https://oniichann.tk">Home</a>
-                <a href="https://oniichann.tk/waifus">Waifus</a>
-                <a href="https://oniichann.tk/reviews">Reviews</a>
-            </div>
+            <Navbar></Navbar>
 
             <div class="body">
                 {

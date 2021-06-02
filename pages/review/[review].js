@@ -5,7 +5,7 @@ import Head from "next/head"
 import markdown from "../../components/markdown"
 import ProperCaseModule from "../../components/propercase"
 const toProperCase = ProperCaseModule.toProperCase
-import NavBar from "../../components/navbar"
+import Navbar from "../../components/navbar"
 
 export default function Review({ reviewObj }){
     const review = reviewObj.review
@@ -48,7 +48,7 @@ export default function Review({ reviewObj }){
 
             </Head>
 
-            <NavBar></NavBar>
+            <Navbar></Navbar>
 
             <img className='view_bg' src={bgImg}></img>
             <div className="view">
@@ -78,7 +78,8 @@ export default function Review({ reviewObj }){
                         }</h2>
 
                         <h3 className="view_rating">
-                            <img src='../review-images/star.png' className='star' />
+                            {/* <img src='../review-images/star.png' className='star' /> */}
+                            <strong className='star'>★</strong>
                             <strong className='card_rating_bigger'>{review.rating}</strong>
                         </h3>
                         <h4 className='view_desc'>
@@ -172,7 +173,7 @@ export default function Review({ reviewObj }){
 
             </div>
 
-            <div className="view_comments">
+            <div className="comments">
                 <h1>Comments</h1>
                     <Disqus.DiscussionEmbed
                     shortname={disqusShortname}
