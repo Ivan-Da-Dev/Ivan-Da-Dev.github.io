@@ -108,8 +108,8 @@ body,html {
 }
 
 .view_container#left .view_genres strong{
-    color: var(--dark_white);
-    background-color: var(--discord_blue);
+    color: var(--dark_blue);
+    background-color: var(--light_blue);
 
     padding: 4px;
 
@@ -127,7 +127,6 @@ body,html {
 
 .view_container#left .view_rating {
     margin-left: 1%;
-    display: flex;
 
     width: 100%;
     height: 6%;
@@ -135,16 +134,13 @@ body,html {
 
 .view_container#left .view_rating .card_rating_bigger {
     font-size: 4rem;
-
     color: var(--dark_white);
-
-    flex: 1;
-
     width: 90%;
 }
 
 .view_container#left .view_rating .star {
-    max-height: 100%;
+    color: var(--light_blue);
+    font-size: 4rem;
 }
 
 .view_container#left .view_desc {
@@ -260,23 +256,6 @@ body,html {
     font-size: 5rem;
     margin-left: 0.5%;
 
-}
-
-/* Comments */
-.view_comments {
-    background-color: #23272a;
-    height: 100%;
-    width: 100%;
-    border-radius: 2px;
-    margin-top: 20px;
-
-    box-shadow: 5px 0px 18px black;
-}
-
-.view_comments h1 {
-    text-align: center;
-    position: relative;
-    color: white;
 }
 
 
@@ -404,14 +383,17 @@ body,html {
 
 
 :root {
+    --dark_blue: #2b2d42;
+    --light_blue: #bcbedc;
+    --display_red: #e94560;
     --discord_blue: #7289da;
-    --top_card_border: #7289da;
-    --bot_card_border: #7289da;
+    --top_card_border: #bcbedc;
+    --bot_card_border: #bcbedc;
     --discord_blue_lighter: #8496d8;
     --discord_light_grey: #99aab5;
     --discord_grey: #2c2f33;
     --discord_dark_grey: #23272a;
-    --discord_dark_grey_hover: #33393d;
+    --discord_dark_grey_hover: #2e3136;
     --dark_white: #ececec;
 
     --read_font: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;

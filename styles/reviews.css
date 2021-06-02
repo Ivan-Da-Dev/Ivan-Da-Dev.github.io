@@ -3,13 +3,27 @@ a {
 }
 
 .anime_list{
-    color: #e94560;
+    color: var(--light_blue);
     font-size: 2.5rem;
     border-radius: 5px;
 
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
+}
+
+.anime_list h1 {
+    margin-left: 5%;
+}
+
+.anime_list h2 {
+    color: var(--light_blue);
+    font-style: 1.4rem;
+    margin-left: 5%;
+
+    font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 .anime_list .card{
@@ -28,6 +42,14 @@ a {
     z-index: 2;
 
     overflow: hidden;
+
+    border: solid;
+    border-color: #bcbedc;
+    border-width: 2px;
+}
+
+.anime_list .card:hover {
+    box-shadow: 0px 0px 18px var(--light_blue);
 }
 
 .anime_list .card:hover .card_bg {
@@ -79,18 +101,18 @@ a {
     font-family: 'open sans',arial,sans-serif;
     color: #bcbedc;
     z-index: 4;
-    background-color: #2b2d42;
+    background-color: #bcbedc;
     height: 100;
     width: 15%;
-    border-radius: 5px 0 0 5px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .anime_list .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
     font-size: 3rem;
     font-weight: bold;
-    color: #bcbedc;
+    color: #2b2d42;
 }
 
 .anime_list .card .card_left .card_left_flexbox .card_ratings #star{
@@ -121,7 +143,7 @@ a {
 }
 
 .anime_list .card .card_right .card_right_top .card_title {
-    color: var(--display_red);
+    color: var(--light_blue);
     font-size: 3rem;
     margin-left: 10px;
     margin-bottom: 0;
@@ -150,8 +172,8 @@ a {
 }
 
 .anime_list .card .card_right .card_right_top .card_genres strong{
-    color: var(--dark_white);
-    background-color: var(--discord_blue);
+    color: var(--dark_blue);
+    background-color: var(--light_blue);
 
     padding: 4px;
 
@@ -330,7 +352,7 @@ a {
     /* Left */
     .anime_list .card {
         width: 95%;
-        background-color: #3c3f5c;
+        background-color: var(--dark_blue_trans);
         margin-bottom: 30px;
     }
 
@@ -361,7 +383,7 @@ a {
         align-content: center;
         align-items: center;
         justify-content: center;
-        background-color: #3c3f5c;
+        background-color: var(--dark_blue_trans);
     }
 
     .anime_list .card .card_left .card_left_flexbox .card_ratings #star{
@@ -374,6 +396,7 @@ a {
 
     .anime_list .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
         text-align: initial;
+        color: var(--light_blue);
     }
 
     .anime_list .card .card_left .card_left_flexbox .card_img {
@@ -409,6 +432,9 @@ a {
 }
 
 :root {
+    --dark_blue_trans: #2b2d4286;
+    --dark_blue: #2b2d42;
+    --light_blue: #bcbedc;
     --display_red: #e94560;
     --discord_blue: #7289da;
     --top_card_border: #7289da;

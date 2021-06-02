@@ -1,6 +1,6 @@
 /* Comments */
 .comments {
-    background-color: #23272a;
+    background-color: var(--dark_blue);
     height: 100%;
     width: 100%;
     border-radius: 2px;
@@ -12,5 +12,61 @@
 .comments h1 {
     text-align: center;
     position: relative;
+    color: var(--light_blue);
+    font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* Stick To Bot Comments */
+.bot_comments {
+    background-color: var(--dark_blue);
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 20px;
+
+    box-shadow: 5px 0px 18px black;
+}
+
+.bot_comments h1 {
+    text-align: center;
+    position: relative;
     color: white;
+}
+
+@media only screen and (max-width: 800px){
+    .bot_comments {
+        position: absolute;
+        bottom: -10%;
+        background-color: #23272a;
+        width: 100%;
+        border-radius: 2px;
+        margin-top: 20px;
+    
+        box-shadow: 5px 0px 18px black;
+    }
+    
+    .bot_comments h1 {
+        text-align: center;
+        position: relative;
+        color: white;
+    }
+}
+
+:root {
+    --dark_blue: #2b2d42;
+    --light_blue: #bcbedc;
+    --display_red: #e94560;
+    --discord_blue: #7289da;
+    --top_card_border: #bcbedc;
+    --bot_card_border: #bcbedc;
+    --discord_blue_lighter: #8496d8;
+    --discord_light_grey: #99aab5;
+    --discord_grey: #2c2f33;
+    --discord_dark_grey: #23272a;
+    --discord_dark_grey_hover: #2e3136;
+    --dark_white: #ececec;
+
+    --read_font: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
