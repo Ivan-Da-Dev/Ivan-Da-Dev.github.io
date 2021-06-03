@@ -967,6 +967,28 @@ anime also feels nostalgic when thinking back`,
   }
 ]
 
+let animes = [
+  {
+    title: "komi can't communicate",
+    date: "October 2021",
+    bg: "kcc.jpeg",
+    img: "kcc_img.jpg",
+    desc: "On her first day attending the elite Itan Private High School, the main setting of the story, Shouko Komi immediately receives an overwhelming surge in popularity due to the unprecedented, stoic beauty and refined elegance her classmates perceive her to possess. However, only Hitohito Tadano, an exceedingly average schoolboy assigned to the seat next to hers, is able to have the opportunity to discover that, behind her bishōjo appearance, Komi has serious issues in communicating with others. Tadano sets out to help Komi on her quest to find 100 friends",
+    genres: ["romance","comedy","slice of life"],
+    type: "season 1"
+  },
+  {
+    title: "Jujutsu Kaisen",
+    date: "December 2021 - March 2022",
+    bg: "jjk.jpg",
+    img: "jjk_img.jpg",
+    desc: "",
+    genres: ["action","gore","supernatural","shounen"],
+    type: "season 2"
+  }
+]
+
+exports.animes = animes
 exports.list = list
 
 exports.ids = () => {
