@@ -8,6 +8,8 @@ import '../styles/waifus.css'
 import '../styles/comments.css'
 import '../styles/all.css'
 import '../styles/animes.css'
+import '../styles/footer.css'
+import '../styles/404.css'
 
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

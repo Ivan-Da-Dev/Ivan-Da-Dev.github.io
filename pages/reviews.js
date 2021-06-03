@@ -5,6 +5,7 @@ import Disqus from "disqus-react"
 import getSeasonModule from "../components/getseason.js"
 const getSeason = getSeasonModule.getSeason
 import Navbar from "../components/navbar"
+import Footer from "../components/footer"
 
 class Reviews extends React.Component {
     constructor(){
@@ -154,6 +155,7 @@ class Reviews extends React.Component {
                     config={disqusConfig}
                     />
             </div>
+            <Footer></Footer>
 
             </div>
         )

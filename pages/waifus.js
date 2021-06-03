@@ -3,6 +3,7 @@ import Head from "next/head"
 import waifus from "../components/waifu_list.js"
 import Disqus from "disqus-react"
 import Navbar from "../components/navbar"
+import Footer from "../components/footer"
 
 class Waifus extends React.Component {
     render() {
@@ -80,6 +81,7 @@ class Waifus extends React.Component {
                     config={disqusConfig}
                     />
             </div>
+            <Footer></Footer>
 
             </div>
         )
