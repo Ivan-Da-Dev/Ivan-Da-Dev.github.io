@@ -1,0 +1,69 @@
+.footer {
+    width: 100%;
+    height: 20%;
+
+    background-color: var(--darker_blue);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer .row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .row a:hover,
+.footer .row a:hover svg {
+    fill: var(--lighter_dark_blue);
+    color: var(--lighter_dark_blue);
+}
+
+.footer .row a {
+    margin-left: 1%;
+    color: var(--light_blue);
+    text-decoration: none;
+
+    font-size: 1.1rem;
+    transition: 0.2s;
+    
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.footer .row a svg {
+    padding: 0;
+    margin: 0;
+    fill: #bcbedc;
+    transition: 0.2s;
+}
+
+.home_footer {
+    position: absolute;
+    top: 100%;
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+:root {
+    --darker_blue: #1f2130;
+    --dark_blue: #2b2d42;
+    --lighter_dark_blue: #454869;
+    --light_blue: #bcbedc;
+    --display_red: #e94560;
+    --discord_blue: #7289da;
+    --top_card_border: #bcbedc;
+    --bot_card_border: #bcbedc;
+    --discord_blue_lighter: #8496d8;
+    --discord_light_grey: #99aab5;
+    --discord_grey: #2c2f33;
+    --discord_dark_grey: #23272a;
+    --discord_dark_grey_hover: #2e3136;
+    --dark_white: #ececec;
+
+    --read_font: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}

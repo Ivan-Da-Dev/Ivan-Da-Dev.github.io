@@ -1,0 +1,65 @@
+._404 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark_blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+._404 ._404_title:hover {
+    text-shadow: 10px 10px 0 rgb(175, 173, 173);
+}
+
+._404 ._404_title {
+    color: white;
+    text-shadow: 5px 5px 0 rgb(175, 173, 173);
+    font-size: 20rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    transition: 0.4s;
+    cursor: not-allowed;
+}
+
+._404 ._404_desc {
+    color: var(--light_blue);
+}
+
+._404_redirect {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--red);
+}
+
+@media only screen and (max-width: 800px){
+    ._404 ._404_title {
+        font-size: 15rem;
+    }
+}
+
+:root {
+    --burple: #5865F2;
+    --green: #57F287;
+    --red: #ED4245;
+}
+
+:root {
+    --dark_blue_trans: #2b2d4286;
+    --dark_blue: #2b2d42;
+    --light_blue: #bcbedc;
+    --display_red: #e94560;
+    --discord_blue: #7289da;
+    --top_card_border: #7289da;
+    --bot_card_border: #7289da;
+    --discord_blue_lighter: #8496d8;
+    --discord_light_grey: #99aab5;
+    --discord_grey: #2c2f33;
+    --discord_dark_grey: #23272a;
+    --dark_white: #ececec;
+
+    --read_font: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
