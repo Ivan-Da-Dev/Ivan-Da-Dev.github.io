@@ -7,7 +7,7 @@ const getSeason = getSeasonModule.getSeason
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 
-class Reviews extends React.Component {
+class Reviews extends React.Component {  
     constructor(){
         super()
         this.state = {
@@ -43,6 +43,7 @@ class Reviews extends React.Component {
             </Head>
 
             <Navbar></Navbar>
+
 
             {
               this.state.categories.map(cat => {

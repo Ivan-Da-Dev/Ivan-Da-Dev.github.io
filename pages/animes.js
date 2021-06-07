@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Head from "next/head"
 import Disqus from "disqus-react"
 import Navbar from "../components/navbar"
+import Footer from "../components/footer"
 
 import animeModule from "../components/review_list"
 const animes = animeModule.animes
@@ -59,13 +60,14 @@ class Animes extends React.Component {
                 }
             </div>
 
-            <div className="bot_comments">
+            <div className="comments">
                 <h1>Comments</h1>
                 <Disqus.DiscussionEmbed
                 shortname={disqusShortname}
                 config={disqusConfig}
                 />
             </div>
+            <Footer></Footer>
         </div>
         )
     }

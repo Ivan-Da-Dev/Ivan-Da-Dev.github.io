@@ -6,6 +6,7 @@ import markdown from "../../components/markdown"
 import ProperCaseModule from "../../components/propercase"
 const toProperCase = ProperCaseModule.toProperCase
 import Navbar from "../../components/navbar"
+import Footer from "../../components/footer"
 
 export default function Review({ reviewObj }){
     const review = reviewObj.review
@@ -22,7 +23,7 @@ export default function Review({ reviewObj }){
     const title = `${review.title.substring(0,1).toUpperCase()}${review.title.slice(1)}`
     const meta_desc = `Read Onii-chan's review on ${review.title} with a rating of ${review.rating}\n\n${review.desc}`
     const _review = 
-    `${markdown.markdown(review.review)}`
+    `${markdown(review.review)}`
     const url = `https://oniichann.tk/review/${review.id.replace(/ /g,'_')}`
     let addSeason = 1
 
@@ -180,9 +181,11 @@ export default function Review({ reviewObj }){
                     config={disqusConfig}
                     />
             </div>
+            <Footer></Footer>
         </div>
     )
 }
+
 
 export async function getStaticProps({ params }) {
     const reviewObj = data.getReviewData(params.review)
