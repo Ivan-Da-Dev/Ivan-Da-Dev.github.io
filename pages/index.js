@@ -53,7 +53,7 @@ class Greet extends React.Component {
           <a href="./animes">Anime</a>
       </div>
 
-      <div className="footer absolute_footer">
+      <div className="footer absolute_footer home">
             <div className='row'>
                 <a href='https://discord.gg/ev6jaTB648'>
                     <svg width="46px" height="46px" viewBox="0 0 236 150">
