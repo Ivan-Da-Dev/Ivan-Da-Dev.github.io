@@ -1004,7 +1004,7 @@ let animes = [
 exports.animes = animes
 exports.list = list
 
-exports.ids = () => {
+exports.reviewIds = () => {
   return list.map(anime => {
     return {
       params: {
@@ -1014,10 +1014,36 @@ exports.ids = () => {
   })
 }
 
+exports.genreIds = () => {
+  const genres = []
+
+  for(const anime of list){
+    for(const genre of anime.genres){
+      if(!genres.includes(genre)){
+        genres.push(genre)
+      }
+    }
+  }
+
+  return genres.map(genre => {
+    return {
+      params: {
+        genre: genre.replace(/ /g,'_')
+      }
+    }
+  })
+}
+
 exports.getReviewData = (id) => {
   return {
     review: list.find(anime => anime.id === id.replace(/_/g,' ')),
     id: list.indexOf(list.find(anime => anime.id === id.replace(/_/g,' ')))
+  }
+}
+
+exports.getReviewByGenre = (genre) => {
+  return {
+    reviews: list.filter(anime => anime.genres.includes(genre))
   }
 }
 
