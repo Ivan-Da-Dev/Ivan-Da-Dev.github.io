@@ -1,4 +1,4 @@
-exports.markdown = (string) => {
+export default function markdown(string){
     const emojis = [
         {
             name: 'hehe',
@@ -36,14 +36,27 @@ exports.markdown = (string) => {
 
     string =
     string
-    .replace(/\*\*[a-zA-Z0-9(\!|\.|\:|\;|\"|\'|\&|\^|\%|\$|\#|\@|\*|\(|\)|\||\<|\>|\/), \t\n\r]+\*\*/g,function(text){
-        return `<strong class='markdown_bold_text'>${text.replace(/\*/g,'')}</strong>`
-    })
     .replace('\n','<br>')
     .replace(/<lenny>/g,"( ͡° ͜ʖ ͡°)")
     .replace(/\bi\b/g,'I')
     .replace(/\bmc\b/g,'MC')
     .replace(/\bmc's\b/g,'MC\'s')
+
+    if(string.split("**")[1]){
+        let count = 0
+        let newStr = []
+
+        for(const str of string.split("**")){
+            if(count !== 0 && count % 2 !== 0){
+                newStr.push(`<strong class='markdown_bold_text'>${str}</strong>`)
+            } else {
+                newStr.push(str)
+            }
+            count++
+        }
+
+        string = newStr.join(" ")
+    }
 
 
     if(/:[a-zA-Z0-9, \t\n\r]+:/g.test(string) === true){
@@ -72,7 +85,9 @@ exports.markdown = (string) => {
         string =
         string
         .replace(imageReg,function(text){
-            return `<br><br><span class='markdown_attachment_ctn'><img class="markdown_attachment" src="../review-images/${text.split('@')[1].split('@')[0]}"></span><br>`
+            return `<br><br><span class='markdown_attachment_ctn'><img class="markdown_attachment" src="../review-images/${
+                text.split('@')[1].split('@')[0]
+            }"></span><br>`
         })
     }
 

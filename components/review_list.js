@@ -964,6 +964,19 @@ anime also feels nostalgic when thinking back`,
 
     Nomura Fudou was sent to this school after being part of a huge brawl. What will he do when the only options he has after enrolling are being expelled from that school or being corrected the way the rest of the male students there were...by being forced to dress and act like a girl!`,
     alt: ['']
+  },
+  {
+    title: "yosuga no sora",
+    id: "yosuga no sora",
+    date: "December 5, 2008",
+    seasons: [],
+    rating: 8,
+    review: 'SWEET HOME ALABAMA BOIS @./yns_bg.png@ The plot is where the MC has different relationships with different girls, in total he had about 4 or 5 relationships, and in the final arc, the one where he has a relationship with Sora, his sister, their friends discovered their relationship\n\nAs you may know, Yosuga No Sora is a anime about incest but what makes it so special compared to other incest animes such as [Oreimo](https://oniichann.tk/review/oreimo)? Its because they are **blood related**, yes **they are blood related and yet they had sex** lmfao I was blown away as well when I discovered this fact\n\nThere are many endings to this anime, every 3-4 episodes is a ending where the MC ends up with a different girl, u could tell by seeing the word \"fin\" @./yns_fin.png@ But the real ending is when he laves the town with Sora to continue their relationship I think\n\nIm a fan of incest so I was dissapointed when the whole anime wasn\'t about the MC and Sora\'s love life. In the end Sora has the least amount of screentime compared to other arcs imo and that is why I gave it a 8 not a 10',
+    genres: ["incest","drama","romance","ecchi","nudity"],
+    img: "yns_img.jpg",
+    bg: "yns_bg.png",
+    desc: "Haruka Kasugano and his twin sister Sora have lost both their parents in an accident, and with them all their support. They decide to move out of the city to the rural town where they once spent summers with their late grandfather. At first everything seems familiar and peaceful, but changes come as Haruka starts to remember things from his youth.",
+    alt: []
   }
 ]
 
@@ -1005,5 +1018,16 @@ exports.getReviewData = (id) => {
   return {
     review: list.find(anime => anime.id === id.replace(/_/g,' ')),
     id: list.indexOf(list.find(anime => anime.id === id.replace(/_/g,' ')))
+  }
+}
+
+exports.Search = (search) => {
+  return {
+    reviews: list.filter(anime => 
+      anime.id.toLowerCase().includes(search.replace(/_/g,' ').toLowerCase()) ||
+      search.replace(/_/g,' ').toLowerCase().includes(anime.id.toLowerCase()) ||
+      anime.title.toLowerCase().includes(search.toLowerCase()) ||
+      search.toLowerCase().includes(anime.title.toLowerCase())
+      )
   }
 }
