@@ -21,11 +21,12 @@ export default function Review({ reviewObj }){
 
     const bgImg = `https://oniichann.tk/review-images/${review.bg}`
     const title = `${review.title.substring(0,1).toUpperCase()}${review.title.slice(1)}`
-    const meta_desc = `Read Onii-chan's review on ${review.title} with a rating of ${review.rating}\n\n${review.desc}`
+    const meta_desc = `${review.desc}`
     const _review = 
     `${markdown(review.review)}`
     const url = `https://oniichann.tk/review/${review.id.replace(/ /g,'_')}`
     let addSeason = 1
+    const rating = `${review.rating}★`
 
     return (
         <div>
@@ -33,6 +34,7 @@ export default function Review({ reviewObj }){
                 <link rel="icon" href="../review-images/icon.png" />
                 <title>{title}</title>
 
+                <meta property="og:site_name"   content={rating}>
                 <meta property="og:title"       content={title}                 data-vue-meta="true"></meta>
                 <meta property="og:description" content={meta_desc}             data-vue-meta="true"></meta>
                 <meta property="og:image"       content={bgImg}                 data-vue-meta="true"></meta>
