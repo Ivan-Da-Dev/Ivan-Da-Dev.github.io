@@ -34,7 +34,7 @@ export default function Review({ reviewObj }){
                 <link rel="icon" href="../review-images/icon.png" />
                 <title>{title}</title>
 
-                <meta property="og:site_name"   content={rating}>
+                <meta property="og:site_name"   content={rating}                data-vue-meta="true"></meta>
                 <meta property="og:title"       content={title}                 data-vue-meta="true"></meta>
                 <meta property="og:description" content={meta_desc}             data-vue-meta="true"></meta>
                 <meta property="og:image"       content={bgImg}                 data-vue-meta="true"></meta>
