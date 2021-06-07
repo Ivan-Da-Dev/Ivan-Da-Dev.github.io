@@ -119,7 +119,7 @@ class Reviews extends React.Component {
                                             {
                                               review.genres.map(g => {
                                                   return (
-                                                      <strong>{`${g.substring(0,1).toUpperCase()}${g.slice(1)}`}</strong>
+                                                      <a href={"../genre/" + g.replace(/ /g,'_')}>{`${g.substring(0,1).toUpperCase()}${g.slice(1)}`}</a>
                                                   )
                                               })
                                             }

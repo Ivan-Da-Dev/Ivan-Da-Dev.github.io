@@ -16,7 +16,7 @@ export default function Review({ reviewObj }){
     const disqusConfig = {
       url: "https://oniichann.tk/review/" + review.id.replace(/ /g,'_'),
       identifier: review.id.toLowerCase().replace(/ /g,'_') + `_${reviewObj.id}`,
-      title: review.title
+      title: toProperCase(review.title)
     }
 
     const bgImg = `https://oniichann.tk/review-images/${review.bg}`
@@ -73,7 +73,7 @@ export default function Review({ reviewObj }){
                         <h2 className="view_genres">{
                         review.genres.map(g => {
                             return (
-                                <strong>{`${g.substring(0,1).toUpperCase()}${g.slice(1)}`}</strong>
+                                <a href={"../genre/" + g}>{`${g.substring(0,1).toUpperCase()}${g.slice(1)}`}</a>
                             )
                         })
                         }</h2>
@@ -198,7 +198,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const paths = data.ids()
+    const paths = data.reviewIds()
 
     return {
       paths,

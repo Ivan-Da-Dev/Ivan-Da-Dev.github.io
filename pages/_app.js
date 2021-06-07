@@ -10,6 +10,7 @@ import '../styles/all.css'
 import '../styles/animes.css'
 import '../styles/footer.css'
 import '../styles/404.css'
+import '../styles/genre.css'
 
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

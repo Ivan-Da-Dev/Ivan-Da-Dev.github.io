@@ -50,9 +50,10 @@ class Greet extends React.Component {
       <div className="buttons" style={{display: 'grid'}}>
           <a href="./reviews">Reviews</a>
           <a href="./waifus">Waifus</a>
+          <a href="./animes">Anime</a>
       </div>
 
-      <div className="footer home_footer">
+      <div className="footer absolute_footer">
             <div className='row'>
                 <a href='https://discord.gg/ev6jaTB648'>
                     <svg width="46px" height="46px" viewBox="0 0 236 150">
