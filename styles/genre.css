@@ -2,7 +2,7 @@ a {
     text-decoration: none;
 }
 
-.anime_list{
+.genre_animes{
     color: var(--light_blue);
     font-size: 2.5rem;
     border-radius: 5px;
@@ -12,21 +12,22 @@ a {
     margin-top: 4rem;
 }
 
-.anime_list h1 {
-    margin-left: 5%;
+.genre_animes #label {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 5rem;
 }
 
-.anime_list h2 {
-    color: var(--light_blue);
-    font-style: 1.4rem;
-    margin-left: 5%;
-
-    font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    font-weight: 600;
-    text-transform: capitalize;
+.genre_animes #results {
+    color: var(--dark_white);
+    font-weight: lighter;
+    font-family: Abel;
+    text-align: center;
+    margin-top: 0;
+    font-size: 3rem;
 }
 
-.anime_list .card{
+.genre_animes .card{
     margin: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -48,16 +49,16 @@ a {
     border-width: 2px;
 }
 
-.anime_list .card:hover {
+.genre_animes .card:hover {
     box-shadow: 0px 0px 18px var(--light_blue);
 }
 
-.anime_list .card:hover .card_bg {
+.genre_animes .card:hover .card_bg {
     width: 105%;
     height: 105%;
 }
 
-.anime_list .card .card_bg {
+.genre_animes .card .card_bg {
     position: absolute;
     z-index: 0;
 
@@ -68,7 +69,7 @@ a {
     transition: 0.5s;
 }
 
-.anime_list .card .card_bg_layer {
+.genre_animes .card .card_bg_layer {
     position: absolute;
     z-index: 0;
 
@@ -78,24 +79,24 @@ a {
     border-radius: 5px;
 }
 
-.anime_list .card .card_content {
+.genre_animes .card .card_content {
     z-index: 1;
     display: flex;
     position: relative;
 }
 
 /* Left */
-.anime_list .card .card_left {
+.genre_animes .card .card_left {
     width: 28%;
     border-radius: 5px 0 0 5px;
 }
 
-.anime_list .card .card_left .card_left_flexbox {
+.genre_animes .card .card_left .card_left_flexbox {
     display: flex;
     height: 100%;
 }
 
-.anime_list .card .card_left .card_left_flexbox .card_ratings{
+.genre_animes .card .card_left .card_left_flexbox .card_ratings{
     font-size: 0rem;
     text-align: center;
     font-family: 'open sans',arial,sans-serif;
@@ -109,13 +110,13 @@ a {
     justify-content: center;
 }
 
-.anime_list .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
+.genre_animes .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
     font-size: 3rem;
     font-weight: bold;
     color: #2b2d42;
 }
 
-.anime_list .card .card_left .card_left_flexbox .card_ratings #star{
+.genre_animes .card .card_left .card_left_flexbox .card_ratings #star{
     max-height: 40%;
     max-width: 40%;
 
@@ -123,7 +124,7 @@ a {
     margin-left: auto;
 }
 
-.anime_list .card .card_left .card_left_flexbox .card_img {
+.genre_animes .card .card_left .card_left_flexbox .card_img {
     object-fit: cover;
     max-width: 85%;
     max-height: 100%;
@@ -131,25 +132,25 @@ a {
 }
 
 /* Right */
-.anime_list .card .card_right {
+.genre_animes .card .card_right {
     height: 50%;
     flex: 1;
 }
 
 /* Right Top */
-.anime_list .card .card_right .card_right_top {
+.genre_animes .card .card_right .card_right_top {
     width: 100%;
     display: block;
 }
 
-.anime_list .card .card_right .card_right_top .card_title {
+.genre_animes .card .card_right .card_right_top .card_title {
     color: var(--light_blue);
     font-size: 3rem;
     margin-left: 10px;
     margin-bottom: 0;
 }
 
-.anime_list .card .card_right .card_right_top .card_season {
+.genre_animes .card .card_right .card_right_top .card_season {
     margin: 0;
     color: var(--discord_blue_lighter);
     font-size: 1.4rem;
@@ -161,17 +162,17 @@ a {
     text-transform: capitalize;
 }
 
-.anime_list .card .card_right .card_right_top .card_genres {
+.genre_animes .card .card_right .card_right_top .card_genres {
     margin-left: 10px;
     width: 100%;
 }
 
-.anime_list .card .card_right .card_right_top .card_genres a:hover{
+.genre_animes .card .card_right .card_right_top .card_genres strong:hover{
     background-color: var(--discord_blue_lighter);
     box-shadow: 0px 0px 18px var(--discord_dark_grey);
 }
 
-.anime_list .card .card_right .card_right_top .card_genres a{
+.genre_animes .card .card_right .card_right_top .card_genres strong{
     color: var(--dark_blue);
     background-color: var(--light_blue);
 
@@ -186,90 +187,88 @@ a {
     margin-right: 0.5%;
 
     font-size: 1.4rem;
-
-    z-index: 100000;
 }
 
 /* Right Bot */
-.anime_list .card .card_right .card_right_bot {
+.genre_animes .card .card_right .card_right_bot {
     width: 100%;
     display: block;
 }
 
-.anime_list .card .card_right .card_right_bot .card_desc {
+.genre_animes .card .card_right .card_right_bot .card_desc {
     font-size: 1.5rem;
     padding: 10px;
     color: var(--dark_white);
 }
 
 @media only screen and (max-width: 1666px) and (min-width: 1500px) {
-    .anime_list .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
         font-size: 2.5rem;
     }
 }
 
 @media only screen and (max-width: 1500px) and (min-width: 1400px){
-    .anime_list .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
         font-size: 2rem;
     }
 
-    .anime_list .card .card_right .card_right_top .card_title {
+    .genre_animes .card .card_right .card_right_top .card_title {
         color: var(--display_red);
         font-size: 2rem;
         margin-left: 10px;
     }
 
-    .anime_list .card .card_right .card_right_top .card_genres a{
+    .genre_animes .card .card_right .card_right_top .card_genres strong{
         font-size: 1.3rem;
     }
 
-    .anime_list .card .card_right .card_right_bot .card_desc {
+    .genre_animes .card .card_right .card_right_bot .card_desc {
         font-size: 1.1rem;
     }
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 1300px){
-    .anime_list .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
         font-size: 2rem;
     }
 
-    .anime_list .card .card_left {
+    .genre_animes .card .card_left {
         width: 30%;
     }
 
-    .anime_list .card .card_right .card_right_top .card_genres a{
+    .genre_animes .card .card_right .card_right_top .card_genres strong{
         font-size: 1.1rem;
     }
 
-    .anime_list .card .card_right .card_right_bot .card_desc {
+    .genre_animes .card .card_right .card_right_bot .card_desc {
         font-size: 0.9rem;
     }
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 1200px){
-    .anime_list .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
         font-size: 2rem;
     }
 
-    .anime_list .card .card_right .card_right_top .card_genres a{
+    .genre_animes .card .card_right .card_right_top .card_genres strong{
         font-size: 1.1rem;
     }
 
-    .anime_list .card .card_right .card_right_bot .card_desc {
+    .genre_animes .card .card_right .card_right_bot .card_desc {
         font-size: 0.9rem;
     }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1100px){
-    .anime_list .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
         font-size: 2rem;
     }
 
-    .anime_list .card .card_right .card_right_top .card_genres a{
+    .genre_animes .card .card_right .card_right_top .card_genres strong{
         font-size: 0.9rem;
     }
 
-    .anime_list .card .card_right .card_right_bot .card_desc {
+    .genre_animes .card .card_right .card_right_bot .card_desc {
         font-size: 0.7rem;
     }
 }
@@ -277,24 +276,24 @@ a {
 /* Mobile Style */
 @media only screen and (max-width: 1100px) and (min-width: 800px){
     /* Left */
-    .anime_list .card {
+    .genre_animes .card {
         width: 95%;
         margin-bottom: 30px;
     }
 
-    .anime_list .card .card_content {
+    .genre_animes .card .card_content {
         flex-direction: column-reverse;
     }
 
-    .anime_list .card .card_left {
+    .genre_animes .card .card_left {
         width: 100%;
     }
 
-    .anime_list .card .card_left .card_left_flexbox {
+    .genre_animes .card .card_left .card_left_flexbox {
         flex-direction: column-reverse;
     }
 
-    .anime_list .card .card_left .card_left_flexbox .card_ratings{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings{
         margin-top: 5px;
         height: 100;
         width: 100%;
@@ -306,7 +305,7 @@ a {
         justify-content: center;
     }
 
-    .anime_list .card .card_left .card_left_flexbox .card_ratings #star{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings #star{
         max-height: 7%;
         max-width: 7%;
         flex: 1;
@@ -314,11 +313,11 @@ a {
         margin-left: initial;
     }
 
-    .anime_list .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
         text-align: initial;
     }
 
-    .anime_list .card .card_left .card_left_flexbox .card_img {
+    .genre_animes .card .card_left .card_left_flexbox .card_img {
         width: 70%;
         height: 70%;
         margin-left: auto;
@@ -328,22 +327,22 @@ a {
 
     /* Right Top */
 
-    .anime_list .card .card_right .card_right_top .card_title {
+    .genre_animes .card .card_right .card_right_top .card_title {
         font-size: 3rem;
     }
 
-    .anime_list .card .card_right .card_right_top .card_genres {
+    .genre_animes .card .card_right .card_right_top .card_genres {
         display: inline-block;
     }
     
-    .anime_list .card .card_right .card_right_top .card_genres a{
+    .genre_animes .card .card_right .card_right_top .card_genres strong{
         font-size: 1.5rem;
         display: inline-flex;
         flex-direction: column;
     }
 
     /* Right Bot */
-    .anime_list .card .card_right .card_right_bot .card_desc {
+    .genre_animes .card .card_right .card_right_bot .card_desc {
         font-size: 1.2rem;
         padding: 12px;
         color: var(--dark_white);
@@ -352,30 +351,30 @@ a {
 
 @media only screen and (max-width: 800px){
     /* Left */
-    .anime_list .card {
+    .genre_animes .card {
         width: 95%;
         background-color: var(--dark_blue_trans);
         margin-bottom: 30px;
     }
 
-    .anime_list .card .card_bg,
-    .anime_list .card .card_bg_layer {
+    .genre_animes .card .card_bg,
+    .genre_animes .card .card_bg_layer {
         display: none;
     }
 
-    .anime_list .card .card_content {
+    .genre_animes .card .card_content {
         flex-direction: column-reverse;
     }
 
-    .anime_list .card .card_left {
+    .genre_animes .card .card_left {
         width: 100%;
     }
 
-    .anime_list .card .card_left .card_left_flexbox {
+    .genre_animes .card .card_left .card_left_flexbox {
         flex-direction: column-reverse;
     }
 
-    .anime_list .card .card_left .card_left_flexbox .card_ratings{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings{
         margin-top: 5px;
         height: 100;
         width: 100%;
@@ -388,7 +387,7 @@ a {
         background-color: var(--dark_blue_trans);
     }
 
-    .anime_list .card .card_left .card_left_flexbox .card_ratings #star{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings #star{
         max-height: 7%;
         max-width: 7%;
         flex: 1;
@@ -396,12 +395,12 @@ a {
         margin-left: initial;
     }
 
-    .anime_list .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
+    .genre_animes .card .card_left .card_left_flexbox .card_ratings #card_rating_bigger{
         text-align: initial;
         color: var(--light_blue);
     }
 
-    .anime_list .card .card_left .card_left_flexbox .card_img {
+    .genre_animes .card .card_left .card_left_flexbox .card_img {
         width: 70%;
         height: 70%;
         margin-left: auto;
@@ -411,22 +410,22 @@ a {
 
     /* Right Top */
 
-    .anime_list .card .card_right .card_right_top .card_title {
+    .genre_animes .card .card_right .card_right_top .card_title {
         font-size: 2.5rem;
     }
 
-    .anime_list .card .card_right .card_right_top .card_genres {
+    .genre_animes .card .card_right .card_right_top .card_genres {
         display: inline-block;
     }
 
-    .anime_list .card .card_right .card_right_top .card_genres a{
+    .genre_animes .card .card_right .card_right_top .card_genres strong{
         font-size: 1.2rem;
         display: inline-flex;
         flex-direction: column;
     }
 
     /* Right Bot */
-    .anime_list .card .card_right .card_right_bot .card_desc {
+    .genre_animes .card .card_right .card_right_bot .card_desc {
         font-size: 1.2rem;
         padding: 12px;
         color: var(--dark_white);
@@ -449,3 +448,5 @@ a {
 
     --read_font: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
