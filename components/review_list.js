@@ -971,14 +971,88 @@ anime also feels nostalgic when thinking back`,
     date: "December 5, 2008",
     seasons: [],
     rating: 8,
-    review: 'SWEET HOME ALABAMA BOIS @./yns_bg.png@ The plot is where the MC has different relationships with different girls, in total he had about 4 or 5 relationships, and in the final arc, the one where he has a relationship with Sora, his sister, their friends discovered their relationship\n\nAs you may know, Yosuga No Sora is a anime about incest but what makes it so special compared to other incest animes such as [Oreimo](https://oniichann.tk/review/oreimo)? Its because they are **blood related**, yes **they are blood related and yet they had sex** lmfao I was blown away as well when I discovered this fact\n\nThere are many endings to this anime, every 3-4 episodes is a ending where the MC ends up with a different girl, u could tell by seeing the word \"fin\" @./yns_fin.png@ But the real ending is when he laves the town with Sora to continue their relationship I think\n\nIm a fan of incest so I was dissapointed when the whole anime wasn\'t about the MC and Sora\'s love life. In the end Sora has the least amount of screentime compared to other arcs imo and that is why I gave it a 8 not a 10',
+    review: 'The first anime I\'ve ever seen where the brother and sister actually gets married, oh yeah and by the way, **they are blood related** @./yns_bg.png@ They didn\'t get married in the anime but I\'m sure they would. Why? because they had sex over 5 times\n\nThe plot is where the MC has different relationships with different girls, in total he had about 4 or 5 relationships, and in the final arc, the one where he has a relationship with Sora, his sister, their friends discovered their relationship\n\nAs you may know, Yosuga No Sora is a anime about incest but what makes it so special compared to other incest animes such as [Oreimo](https://oniichann.tk/review/oreimo)? Its because they are **blood related**, yes **they are blood related and yet they had sex** lmfao I was blown away as well when I discovered this fact\n\nThere are many endings to this anime, every 3-4 episodes is a ending where the MC ends up with a different girl, u could tell by seeing the word \"fin\" @./yns_fin.png@ But the real ending is when he laves the town with Sora to continue their relationship I think\n\nIm a fan of incest so I was dissapointed when the whole anime wasn\'t about the MC and Sora\'s love life. In the end Sora has the least amount of screentime compared to other arcs imo and that is why I gave it a 8 not a 10\n\nA lot of people would say that this is hentai and yes it is, but in terms of why it isn\'t flagged as hentai is because it doesn\'t show their lower part of their bodies',
     genres: ["incest","drama","romance","ecchi","nudity"],
     img: "yns_img.jpg",
     bg: "yns_bg.png",
     desc: "Haruka Kasugano and his twin sister Sora have lost both their parents in an accident, and with them all their support. They decide to move out of the city to the rural town where they once spent summers with their late grandfather. At first everything seems familiar and peaceful, but changes come as Haruka starts to remember things from his youth.",
     alt: []
+  },
+  {
+    title: "the ryuo's work is never done",
+    id: "the ryuos work is never done",
+    date: "January 8, 2018",
+    seasons: [],
+    rating: 9,
+    review: "Now I don't understand how to play shougi but for some reason, I really enjoyed this anime @./trwind_bg.png@ The plot is where the MC is history's youngest person to achieve the title of \"ryuo\" which means hes very good at playing shougi (Japanese version of chess). He then encounters a 9 year old that wants to be his disciple and that is Ai Hinatsuru @./trwind_ai_hinatsuru.png@ he teaches her how to play shougi while **living together**. On the way, he realizes that Ai needs a rival, so he got himself another loli disciple and that is Ai Yashajin @./trwind_ai_yashajin.png@ along the way, they show us how competitive shougi could be and that it gives u this vibe as if they were fighting a demon lord or something which whats make this anime stand out so much imo, imagine someone making chess, but by adding some lolis, a \"few\" fan service scenes @./trwind_ai_bath_scene.gif@ and some very cool sound effects, what do they get? A very good anime of course\n\nOverall I would give it a 9 because It doesn't have a season 2, it has potential to get another season and I hope it does",
+    genres: ["shougi","harem","ecchi","comedy","slice of life","game"],
+    img: "trwind_img.jpg",
+    bg: "trwind_bg.png",
+    desc: "Shogi, a Japanese game similar to chess, is one of the most popular board games in the country, played by everyone from children to the elderly. Some players are talented enough to take the game to a professional level. The title of Ryuuou, meaning \"the dragon king,\" is only awarded to the person who reaches the pinnacle of competitive shogi.\n\nYaichi Kuzuryuu has just become the youngest Ryuuou after winning the grand championship. However, the shogi community is unwelcoming to his victory, some even calling him the worst Ryuuou in history. Moreover, he forgets about the agreement he made with Ai Hinatsuru, a little girl he promised to coach if he won. After she shows up at his doorstep, he reluctantly agrees to uphold his promise and makes Ai his disciple.\n\nTogether, they aim to improve and exceed the limits of their shogi prowess: Ai, to unlock her hidden talents; Yaichi, to prove to the world that he deserves his accomplishments.",
+    alt: []
+  },
+  {
+    title: "konosuba",
+    id: "konosuba",
+    date: "January 14, 2016",
+    seasons: [
+      {
+        title: "konosuba",
+        img: "konosuba_img.jpg",
+        date: "January 5, 2014",
+        type: "anime"
+      },
+      {
+        title: "konosuba 2",
+        img: "konosuba_s2.jpg",
+        date: "February 25, 2020",
+        type: "anime"
+      },
+      {
+        title: "Legend of Crimson",
+        img: "konosuba_mv.jpg",
+        date: "August 30, 2019",
+        type: "movie"
+      }
+    ],
+    rating: 10,
+    review: "Best comedy ever, no cap. It starts off with kazuma, a shut in NEET dying of shock, because he thought a truck was gonna run him over lmao @./konosuba_kazuma_dying.jpg@ Even the way they draw the characters makes me smile sometimes, especially when they give a thumbs up @./konosuba_thumbs_up.jpg@ While konosuba is a comedy focused anime, it also has a good ED and OP. A lot of comedy anime has weird or loud music in their ED or OPs but konosuba's OP is calm and relaxing. Nothing beats a calm and relaxing ED after having a good laugh\n\nWhich is funnier, grand blue or konosuba? Konosuba of course, grand blue uses screaming, alcohol, naked men doing weird things and high contrasted animations to make us get their humor while konosuba, which also uses screaming but they make relatable situations where even if I didn't been in those situations, I'll still laugh at them and thats why it really hit me hard when it ended",
+    genres: [],
+    img: "konosuba_img.jpg",
+    bg: "konosuba_bg.png",
+    desc: `The life of Satou Kazuma, a hikikomori who likes games, all too soon came to an end because of a traffic accident... It was supposed to, but when he woke up, a beautiful girl who called herself a goddess was in front of his eyes. "Hey, I have got something a little nice for you. Wanna go to another world? You can take only one thing of your choice along with you." "...then I'll take you." From here on, the great adventure of subjugating the Demon King will begin for the reincarnated Kazuma... Or so one would think, but it's the labor for obtaining food, clothing and shelter that begins! Despite Kazuma wanting to live in peace, the goddess keeps causing problems one after another, and eventually, they attract the attention of the Demon King's army!?`,
+    alt: []
+  },
+  {
+    title: "comic girls",
+    id: "comic girls",
+    date: "April 5, 2018",
+    seasons: [],
+    rating: 9,
+    review: "a masterpiece of a cute anime. It would look like any normal cute anime that focuses on its looks more than its plot but it actually isn't @./cg_bg.jpg@ The story is about girls whose profession are drawing mangas gather together and thats just that, but Kaos, keeps failing to make a good manga. She tries many times and gets rejected everytime @./cg_kaos_cry.gif@ She is a extremly kind and wary person. She apologizes for everything even if shes not the one at fault\n\nAltho Kaos has been rejected for a lot of times, she still doesn't give up on making manga. When watching near the ending, I noticed Kaos really struggled to make her mangas, up until then they present her struggling in a comedic way but now they're presenting it in a serious way and that what make my heart sank and this is why I said this anime is different from other cute animes\n\nI'm really sad that such a masterpiece is not well known",
+    genres: ["slice of life","comedy","creator's slice of life"],
+    img: "cg_img.jpg",
+    bg: "cg_bg.jpg",
+    desc: "Moeta Kaoruko ia a 15-year-old high school student and manga creator, who uses the pen name Chaos. After ranking at the bottom of a reader survey, Kaoruko's editor recommends that she enter an all-female dormitory for manga creators. Kaoruko's roommates are shoujo manga creator Koizuka Koyume, teen romance manga creator Irokawa Ruki, and shounen manga creator Katsuki Tsubasa. The girls support each other as they work to become better manga creators.",
+    alt: []
   }
 ]
+
+/*
+  {
+    title: "",
+    id: "",
+    date: "",
+    seasons: [],
+    rating: 9,
+    review: "",
+    genres: [],
+    img: "",
+    bg: "",
+    desc: "",
+    alt: []
+  }
+*/
 
 let animes = [
   {
