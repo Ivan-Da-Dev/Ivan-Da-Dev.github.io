@@ -1043,7 +1043,7 @@ exports.getReviewData = (id) => {
 
 exports.getReviewByGenre = (genre) => {
   return {
-    reviews: list.filter(anime => anime.genres.includes(genre))
+    reviews: list.filter(anime => anime.genres.includes(genre.replace(/_/g,' ')))
   }
 }
 
