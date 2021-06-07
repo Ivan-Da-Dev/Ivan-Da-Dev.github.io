@@ -37,7 +37,7 @@ body {
 
 .buttons a:hover {
     cursor: pointer;
-    background-color:#bcbedc;
+    background-color:#bcbedc60;
     color: var(--dark_white);
 }
 
@@ -52,7 +52,7 @@ body {
     font-size: 3.5rem;
     color: #bcbedc;
     border-radius: 5px;
-    background-color:#38383f;
+    background-color:#38383f63;
 
     text-align: center;
     transition: 0.2s;
