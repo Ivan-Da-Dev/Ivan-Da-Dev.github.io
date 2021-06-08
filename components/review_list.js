@@ -1017,7 +1017,7 @@ anime also feels nostalgic when thinking back`,
     ],
     rating: 10,
     review: "Best comedy ever, no cap. It starts off with kazuma, a shut in NEET dying of shock, because he thought a truck was gonna run him over lmao @./konosuba_kazuma_dying.jpg@ Even the way they draw the characters makes me smile sometimes, especially when they give a thumbs up @./konosuba_thumbs_up.jpg@ While konosuba is a comedy focused anime, it also has a good ED and OP. A lot of comedy anime has weird or loud music in their ED or OPs but konosuba's OP is calm and relaxing. Nothing beats a calm and relaxing ED after having a good laugh\n\nWhich is funnier, grand blue or konosuba? Konosuba of course, grand blue uses screaming, alcohol, naked men doing weird things and high contrasted animations to make us get their humor while konosuba, which also uses screaming but they make relatable situations where even if I didn't been in those situations, I'll still laugh at them and thats why it really hit me hard when it ended",
-    genres: [],
+    genres: ["slife of life","comedy","adventure","isekai"],
     img: "konosuba_img.jpg",
     bg: "konosuba_bg.png",
     desc: `The life of Satou Kazuma, a hikikomori who likes games, all too soon came to an end because of a traffic accident... It was supposed to, but when he woke up, a beautiful girl who called herself a goddess was in front of his eyes. "Hey, I have got something a little nice for you. Wanna go to another world? You can take only one thing of your choice along with you." "...then I'll take you." From here on, the great adventure of subjugating the Demon King will begin for the reincarnated Kazuma... Or so one would think, but it's the labor for obtaining food, clothing and shelter that begins! Despite Kazuma wanting to live in peace, the goddess keeps causing problems one after another, and eventually, they attract the attention of the Demon King's army!?`,
@@ -1035,21 +1035,47 @@ anime also feels nostalgic when thinking back`,
     bg: "cg_bg.jpg",
     desc: "Moeta Kaoruko ia a 15-year-old high school student and manga creator, who uses the pen name Chaos. After ranking at the bottom of a reader survey, Kaoruko's editor recommends that she enter an all-female dormitory for manga creators. Kaoruko's roommates are shoujo manga creator Koizuka Koyume, teen romance manga creator Irokawa Ruki, and shounen manga creator Katsuki Tsubasa. The girls support each other as they work to become better manga creators.",
     alt: []
+  },
+  {
+    title: "noucome",
+    id: "noucome",
+    date: "October 10, 2013",
+    seasons: [],
+    rating: 7,
+    review: "My first romcom I watched and holy fuck I laughed way too much @./noucome_angry.gif@ The plot is where the mc has to choose a option that he must do or else he gets a headache, the plot is kind of like a visual novel\n\nTheres almost no romance in this anime but if following by the genres, this technically is a romcom.Theres a shit ton of comedy however\n\nTheir humor is very easy to get, it doesn't have much deep meanings such as adult jokes in it, and whenever the MC chooses a option, it either is a dumb one, or a dumb funny one. Plus, theres a lot of cute girls",
+    genres: ["comedy","romance"],
+    img: "noucome_img.jpg",
+    bg: "noucome_bg.jpg",
+    desc: `Kanade Amakusa is a high school student who is suffering from a curse called "Absolute Choices." This curse requires him to select an action from a list of two or three options that appear before him at any time, and has no control over what choices appear. Many of them are weird or perverse and as a result, the curse has tainted his reputation with his classmates and other people around him, making his life very difficult. However, one day, a choice he makes on his way home from school causes a mysterious, beautiful young girl to fall from the sky.`,
+    alt: []
+  },
+  {
+    title: "a silent voice",
+    id: "a silent voice",
+    date: "April 20, 2017",
+    seasons: [],
+    rating: 4,
+    review: "as rumors said that it was a sad movie, after finishing it, I didn't cry nor did I feel sorry for anyone except the girl who got bullied @./asv_bg.jpg@ Personally, I don't think suicide is wrong but this doesn't mean I encourage or support anyone to do so. That's why for the most of the movie, I don't feel sad for the MC when he tries to suicide\n\nThey use suicide to make this movie sad. I know that this movie is showing us why suicide isn't okay but I still don't like the fact that if u take out the suicide parts of the movie, it becomes 30% if not, 50% less sad\n\nTbh I don't know why the mc bullies a cute girl. I'll never understand why people bully someone for their disabilities. In fact, I thought the MC would fall for her when he first saw her, but in the end, the girl who got bullied by the mc unexpectedly confessed to the MC, but the MC, just like most MCs, is dense as fuck and somehow misheard \"i like you\" for \"i like the moon\"\n\nOverall, I would give it a 10 if someone actually commited suicide. Bceause the way I see something as \"sad\" is when someone died",
+    genres: ["shounen","drama","school"],
+    img: "asv_img.jpg",
+    bg: "asv_bg.jpg",
+    desc: `As a wild youth, elementary school student Shouya Ishida sought to beat boredom in the cruelest ways. When the deaf Shouko Nishimiya transfers into his class, Shouya and the rest of his class thoughtlessly bully her for fun. However, when her mother notifies the school, he is singled out and blamed for everything done to her. With Shouko transferring out of the school, Shouya is left at the mercy of his classmates. He is heartlessly ostracized all throughout elementary and middle school, while teachers turn a blind eye.\n\nNow in his third year of high school, Shouya is still plagued by his wrongdoings as a young boy. Sincerely regretting his past actions, he sets out on a journey of redemption: to meet Shouko once more and make amends.\n\nKoe no Katachi tells the heartwarming tale of Shouya's reunion with Shouko and his honest attempts to redeem himself, all while being continually haunted by the shadows of his past.`,
+    alt: []
   }
 ]
 
-/*
+/* 
   {
     title: "",
     id: "",
     date: "",
     seasons: [],
-    rating: 9,
+    rating: 4,
     review: "",
     genres: [],
     img: "",
     bg: "",
-    desc: "",
+    desc: ``,
     alt: []
   }
 */
