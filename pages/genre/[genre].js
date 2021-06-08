@@ -133,7 +133,7 @@ export default function Genre({ reviews,genre }){
                 }    
             </div>
 
-        <div className="absolute_footer">
+        <div className="footer">
             <div className='row'>
                 <a href='https://discord.gg/ev6jaTB648'>
                     <svg width="46px" height="46px" viewBox="0 0 236 150">
